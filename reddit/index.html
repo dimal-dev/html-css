@@ -1,0 +1,1019 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Reddit1 Clone</title>
+
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/search.css">
+    <link rel="stylesheet" href="assets/css/profile-menu.css">
+    <link rel="stylesheet" href="assets/css/sidebar.css">
+    <link rel="stylesheet" href="assets/css/content.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+<div class="main-header">
+        <a class="reddit-logo" href="">
+            <img src="assets/img/reddit-logo.png">
+<!--            <img src="assets/img/reddit-logo.svg">-->
+<!--            <img src="assets/img/reddit.svg" class="reddit-logo-word">-->
+        </a>
+
+    <div class="search-container-l1">
+        <div class="search-container-l2">
+            <label for="input-search" class="search-icon-container">
+                <img src="assets/img/icon/search.svg">
+            </label>
+            <input type="text" class="search-input" placeholder="Search Reddit" id="input-search">
+            <div class="opened-search">
+                <div class="opened-search-content-divider"></div>
+                <div class="opened-search-scrollable">
+                    <div class="resent-searches">
+                        <div class="resent-searches-item">
+                            <div class="resent-search-logo-container">
+                                <img src="assets/img/hades.png">
+                            </div>
+                            <div class="resent-search-title">
+                                r/HadesTheGame
+                            </div>
+                            <span class="resent-search-close-icon-container">
+                            <img src="assets/img/icon/close.svg">
+                        </span>
+                        </div>
+                        <div class="resent-searches-item">
+                            <div class="resent-search-logo-container">
+                                <img src="assets/img/hades.png">
+                            </div>
+                            <div class="resent-search-title">
+                                r/HadesTheGame
+                            </div>
+                            <span class="resent-search-close-icon-container">
+                            <img src="assets/img/icon/close.svg">
+                        </span>
+                        </div>
+                        <div class="resent-searches-item">
+                            <div class="resent-search-logo-container">
+                                <img src="assets/img/hades.png">
+                            </div>
+                            <div class="resent-search-title">
+                                r/HadesTheGame
+                            </div>
+                            <span class="resent-search-close-icon-container">
+                            <img src="assets/img/icon/close.svg">
+                        </span>
+                        </div>
+                        <div class="resent-searches-item">
+                            <div class="resent-search-logo-container">
+                                <img src="assets/img/hades.png">
+                            </div>
+                            <div class="resent-search-title">
+                                r/HadesTheGame
+                            </div>
+                            <span class="resent-search-close-icon-container">
+                            <img src="assets/img/icon/close.svg">
+                        </span>
+                        </div>
+                        <div class="resent-searches-item">
+                            <div class="resent-search-logo-container">
+                                <img src="assets/img/hades.png">
+                            </div>
+                            <div class="resent-search-title">
+                                r/HadesTheGame
+                            </div>
+                            <span class="resent-search-close-icon-container">
+                            <img src="assets/img/icon/close.svg">
+                        </span>
+                        </div>
+                    </div>
+                    <div class="trending-today">
+                        <div class="trending-today-header">
+                            <div class="trending-today-icon">
+                                <img src="assets/img/trending.svg">
+                            </div>
+                            <div class="trending-today-title">
+                                Trending Today
+                            </div>
+                        </div>
+                        <ul class="trending-today-items-container">
+                            <li class="trending-today-item">
+                                <div class="trending-today-item-info">
+                                    <div class="trending-today-item-header">
+                                        Stanley Cup Final
+                                    </div>
+                                    <div class="trending-today-item-body">
+                                        Playoff Game Thread: Florida Panthers (3-2) at Edmonton Oilers (2-3) - Game 6 -
+                                        21 Jun 2024 - 06:00PM MDT
+                                    </div>
+                                    <div class="trending-today-item-source">
+                                        <div class="trending-today-item-avatar">
+                                            <img src="assets/img/avatar/avatar-1.png">
+                                        </div>
+                                        <div class="trending-today-item-name">
+                                            r/hockey and more
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="trending-today-item-preview">
+                                    <img src="assets/img/preview/preview-1.jpg">
+                                </div>
+                            </li>
+                            <li class="trending-today-item">
+                                <div class="trending-today-item-info">
+                                    <div class="trending-today-item-header">
+                                        Stanley Cup Final
+                                    </div>
+                                    <div class="trending-today-item-body">
+                                        Playoff Game Thread: Florida Panthers (3-2) at Edmonton Oilers (2-3) - Game 6 -
+                                        21 Jun 2024 - 06:00PM MDT
+                                    </div>
+                                    <div class="trending-today-item-source">
+                                        <div class="trending-today-item-avatar">
+                                            <img src="assets/img/avatar/avatar-1.png">
+                                        </div>
+                                        <div class="trending-today-item-name">
+                                            r/hockey and more
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="trending-today-item-preview">
+                                    <img src="assets/img/preview/preview-1.jpg">
+                                </div>
+                            </li>
+                            <li class="trending-today-item">
+                                <div class="trending-today-item-info">
+                                    <div class="trending-today-item-header">
+                                        Stanley Cup Final
+                                    </div>
+                                    <div class="trending-today-item-body">
+                                        Playoff Game Thread: Florida Panthers (3-2) at Edmonton Oilers (2-3) - Game 6 -
+                                        21 Jun 2024 - 06:00PM MDT
+                                    </div>
+                                    <div class="trending-today-item-source">
+                                        <div class="trending-today-item-avatar">
+                                            <img src="assets/img/avatar/avatar-1.png">
+                                        </div>
+                                        <div class="trending-today-item-name">
+                                            r/hockey and more
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="trending-today-item-preview">
+                                    <img src="assets/img/preview/preview-1.jpg">
+                                </div>
+                            </li>
+                            <li class="trending-today-item">
+                                <div class="trending-today-item-info">
+                                    <div class="trending-today-item-header">
+                                        Stanley Cup Final
+                                    </div>
+                                    <div class="trending-today-item-body">
+                                        Playoff Game Thread: Florida Panthers (3-2) at Edmonton Oilers (2-3) - Game 6 -
+                                        21 Jun 2024 - 06:00PM MDT
+                                    </div>
+                                    <div class="trending-today-item-source">
+                                        <div class="trending-today-item-avatar">
+                                            <img src="assets/img/avatar/avatar-1.png">
+                                        </div>
+                                        <div class="trending-today-item-name">
+                                            r/hockey and more
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="trending-today-item-preview">
+                                    <img src="assets/img/preview/preview-1.jpg">
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-actions-container">
+        <div class="header-action-item">
+            <img src="assets/img/icon/advertise.svg">
+            <div class="tooltip">
+                Advertise on Reddit
+            </div>
+        </div>
+        <div class="header-action-item">
+            <img src="assets/img/icon/chat.svg">
+            <div class="tooltip">
+                Open chat
+            </div>
+        </div>
+        <div class="header-action-item">
+            <img src="assets/img/icon/create-post.svg">
+            <div class="tooltip">
+                Create post
+            </div>
+        </div>
+        <div class="header-action-item header-action-item--inbox">
+            <img src="assets/img/icon/open-inbox.svg">
+            <div class="notifications-indicator">1</div>
+            <div class="tooltip">
+                Open inbox
+            </div>
+        </div>
+        <div class="header-action-item header-action-item--profile-menu">
+            <label for="profile-menu-checkbox" class="header-action-avatar">
+                <img src="assets/img/avatar.png" class="avatar-img">
+                <div class="online-indicator"></div>
+            </label>
+
+            <input type="checkbox" id="profile-menu-checkbox">
+            <div class="profile-menu">
+                <ul class="profile-menu-section">
+                    <li class="profile-menu-item">
+                        <div class="profile-menu-item-icon profile-menu-item-icon--avatar">
+                            <img src="assets/img/avatar.png">
+                            <div class="online-indicator online-indicator--profile-menu"></div>
+                        </div>
+                        <div class="profile-menu-item-info">
+                            <span class="profile-menu-item-title">
+                                View Profile
+                            </span>
+                            <span class="profile-menu-item-info-extra">
+                                u/Curious_Volume3530
+                            </span>
+                        </div>
+                    </li>
+                    <li class="profile-menu-item">
+                        <div class="profile-menu-item-icon">
+                            <img src="assets/img/icon/edit-avatar.svg">
+                        </div>
+                        <div class="profile-menu-item-info">
+                            <span class="profile-menu-item-title">
+                                Edit Avatar
+                            </span>
+                        </div>
+                    </li>
+                    <li class="profile-menu-item">
+                        <div class="profile-menu-item-icon">
+                            <img src="assets/img/icon/achievements.svg">
+                        </div>
+                        <div class="profile-menu-item-info">
+                                <span class="profile-menu-item-title">
+                                    Achievements
+                                </span>
+                            <span class="profile-menu-item-info-extra">
+                                    3 unlocked
+                                </span>
+                        </div>
+                    </li>
+                    <li class="profile-menu-item">
+                        <div class="profile-menu-item-icon">
+                            <img src="assets/img/icon/contributor-program.svg">
+                        </div>
+                        <div class="profile-menu-item-info">
+                                <span class="profile-menu-item-title">
+                                    Contributor Program
+                                </span>
+                            <span class="profile-menu-item-info-extra profile-menu-item-info-extra--gold-earned">
+                                    <img src="assets/img/icon/gold.svg"> 12 gold earned
+                                </span>
+                        </div>
+                    </li>
+                    <li class="profile-menu-item">
+                        <div class="profile-menu-item-icon">
+                            <img src="assets/img/icon/dark-mode.svg">
+                        </div>
+                        <div class="profile-menu-item-info">
+                            <label class="profile-menu-item-title profile-menu-item-title--dark-mode" >
+                                Dark Mode
+                                <input type="checkbox">
+                            </label>
+                        </div>
+                    </li>
+                    <li class="profile-menu-item">
+                        <div class="profile-menu-item-icon">
+                            <img src="assets/img/icon/logout.svg">
+                        </div>
+                        <div class="profile-menu-item-info">
+                                <span class="profile-menu-item-title">
+                                    Log Out
+                                </span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="tooltip tooltip--right">
+                Open profile menu
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="sidebar">
+    <div class="sidebar-section">
+        <ul class="sidebar-list">
+            <li class="item">
+                <div class="icon">
+                    <img src="assets/img/icon/home.svg">
+                </div>
+                <div class="details">
+                    Home
+                </div>
+            </li>
+            <li class="item">
+                <div class="icon">
+                    <img src="assets/img/icon/popular.svg">
+                </div>
+                <div class="details">
+                    Popular
+                </div>
+            </li>
+            <li class="item">
+                <div class="icon">
+                    <img src="assets/img/icon/all.svg">
+                </div>
+                <div class="details">
+                    All
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="sidebar-section">
+        <input type="checkbox" id="sidebar-section-collapse-checkbox-1" class="collapse-checkbox">
+        <label for="sidebar-section-collapse-checkbox-1" class="sidebar-collapse-label">
+            <span>Custom feeds</span>
+            <img src="assets/img/icon/down.svg">
+        </label>
+        <ul class="sidebar-list">
+            <li class="item">
+                <div class="icon">
+                    <img src="assets/img/icon/plus.svg">
+                </div>
+                <div class="details">
+                    Create a custom feed
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="sidebar-section">
+        <input type="checkbox" id="sidebar-section-collapse-checkbox-2" class="collapse-checkbox">
+        <label for="sidebar-section-collapse-checkbox-2" class="sidebar-collapse-label">
+            <span>Recent</span>
+            <img src="assets/img/icon/down.svg">
+        </label>
+        <ul class="sidebar-list">
+            <li class="item">
+                <div class="icon icon--round">
+                    <img src="assets/img/community/community-icon-1.png">
+                </div>
+                <div class="details">
+                    r/HadesTheGame
+                </div>
+            </li>
+            <li class="item">
+                <div class="icon icon--round">
+                    <img src="assets/img/community/community-icon-3.png">
+                </div>
+                <div class="details">
+                    r/css
+                </div>
+            </li>
+            <li class="item">
+                <div class="icon icon--round">
+                    <img src="assets/img/community/community-icon-5.png">
+                </div>
+                <div class="details">
+                    r/PHP
+                </div>
+            </li>
+            <li class="item icon--round">
+                <div class="icon">
+                    <img src="assets/img/community/community-icon-2.png">
+                </div>
+                <div class="details">
+                    r/mkbhd
+                </div>
+            </li>
+            <li class="item">
+                <div class="icon icon--round">
+                    <img src="assets/img/community/community-icon-4.png">
+                </div>
+                <div class="details">
+                    r/BaldursGate3
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="sidebar-section">
+        <input type="checkbox" id="sidebar-section-collapse-checkbox-3" class="collapse-checkbox">
+        <label for="sidebar-section-collapse-checkbox-3" class="sidebar-collapse-label">
+            <span>Communities</span>
+            <img src="assets/img/icon/down.svg">
+        </label>
+        <ul class="sidebar-list">
+            <li class="item">
+                <div class="icon icon--round">
+                    <img src="assets/img/icon/plus.svg">
+                </div>
+                <div class="details">
+                    Create a community
+                </div>
+            </li>
+            <li class="item">
+                <div class="icon icon--round">
+                    <img src="assets/img/community/community-icon-6.png">
+                </div>
+                <div class="details">
+                    r/hiphopheads
+
+                    <div class="make-favourite">
+                        <img src="assets/img/icon/star.svg">
+                    </div>
+                </div>
+            </li>
+            <li class="item">
+                <div class="icon icon--round">
+                    <img src="assets/img/community/community-icon-7.png">
+                </div>
+                <div class="details">
+                    r/HunterXHunter
+
+                    <div class="make-favourite">
+                        <img src="assets/img/icon/star.svg">
+                    </div>
+                </div>
+            </li>
+            <li class="item">
+                <div class="icon icon--round">
+                    <img src="assets/img/community/community-icon-8.png">
+                </div>
+                <div class="details">
+                    r/WOW
+
+                    <div class="make-favourite">
+                        <img src="assets/img/icon/star.svg">
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="sidebar-section">
+        <input type="checkbox" id="sidebar-section-collapse-checkbox-4" class="collapse-checkbox">
+        <label for="sidebar-section-collapse-checkbox-4" class="sidebar-collapse-label">
+            <span>Resources</span>
+            <img src="assets/img/icon/down.svg">
+        </label>
+        <ul class="sidebar-list">
+            <li class="item">
+                <div class="icon">
+                    <img src="assets/img/icon/about-reddit.svg">
+                </div>
+                <div class="details">
+                    About Reddit
+                </div>
+            </li>
+            <li class="item">
+                <div class="icon">
+                    <img src="assets/img/icon/advertise-2.svg">
+                </div>
+                <div class="details">
+                    Advertise
+                </div>
+            </li>
+            <li class="item">
+                <div class="icon">
+                    <img src="assets/img/icon/help.svg">
+                </div>
+                <div class="details">
+                    Help
+                </div>
+            </li>
+            <li class="item">
+                <div class="icon">
+                    <img src="assets/img/icon/blog.svg">
+                </div>
+                <div class="details">
+                    Blog
+                </div>
+            </li>
+            <li class="item">
+                <div class="icon">
+                    <img src="assets/img/icon/careers.svg">
+                </div>
+                <div class="details">
+                    Careers
+                </div>
+            </li>
+            <li class="item">
+                <div class="icon">
+                    <img src="assets/img/icon/press.svg">
+                </div>
+                <div class="details">
+                    Press
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="sidebar-section">
+        <ul class="sidebar-list">
+            <li class="item">
+                <div class="icon">
+                    <img src="assets/img/icon/communities.svg">
+                </div>
+                <div class="details">
+                    Communities
+                </div>
+            </li>
+            <li class="item">
+                <div class="icon">
+                    <img src="assets/img/icon/best-of-reddit.svg">
+                </div>
+                <div class="details">
+                    Best of Reddit
+                </div>
+            </li>
+            <li class="item">
+                <div class="icon">
+                    <img src="assets/img/icon/topics.svg">
+                </div>
+                <div class="details">
+                    Topics
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="sidebar-section">
+        <ul class="sidebar-list">
+            <li class="item">
+                <div class="icon">
+                    <img src="assets/img/icon/content-policy.svg">
+                </div>
+                <div class="details">
+                    Content Policy
+                </div>
+            </li>
+            <li class="item">
+                <div class="icon">
+                    <img src="assets/img/icon/privacy-policy.svg">
+                </div>
+                <div class="details">
+                    Privacy Policy
+                </div>
+            </li>
+            <li class="item">
+                <div class="icon">
+                    <img src="assets/img/icon/user-agreement.svg">
+                </div>
+                <div class="details">
+                    User Agreement
+                </div>
+            </li>
+        </ul>
+        <div class="copyright">
+            <a href="https://www.reddit.com/">
+                Reddit Clone &copy; 2024.
+            </a>
+        </div>
+    </div>
+</div>
+<div class="content-wrapper">
+    <div class="content">
+        <div class="content-head">
+            <div class="banner">
+                <img src="assets/img/banner-hades.png">
+            </div>
+            <div class="banner-info">
+                <div class="banner-community">
+                    <img src="assets/img/community/community-icon-1.png" class="banner-community-icon">
+                    <h1 class="banner-community-title">
+                        r/HadesTheGame
+                    </h1>
+                </div>
+                <div class="banner-actions">
+                    <button class="create-post">
+                        <img src="assets/img/icon/plus.svg"> Create a post
+                    </button>
+                    <button class="join">
+                        Join
+                    </button>
+                    <div class="more-wrapper">
+                        <input type="checkbox" id="more-menu-toggle-checkbox">
+                        <label class="more-button" for="more-menu-toggle-checkbox">
+                            <img src="assets/img/icon/three-dots.svg">
+                        </label>
+                        <ul class="more-menu">
+                            <li class="more-menu-item">
+                                Add to custom feed
+                            </li>
+                            <li class="more-menu-item">
+                                Add to favourites
+                            </li>
+                            <li class="more-menu-item">Mute r/HadesTheGame</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content-body">
+            <div class="content-main">
+                <div class="post-list">
+                    <div class="post-container">
+                        <div class="post">
+                            <div class="post-meta">
+                                <div class="post-user-info">
+                                    <img src="assets/img/avatar/avatar-2.png">
+                                    <span class="post-user-name">
+                                u/Flat-Profession-8945
+                            </span>
+                                </div>
+                                <div class="post-created-at">
+                                    &bull;
+                                    1 day ago
+                                </div>
+                            </div>
+                            <h2 class="post-header">
+                                HADES 2
+                            </h2>
+                            <div class="post-preview">
+                                <img src="assets/img/preview/preview-2.webp">
+                            </div>
+                            <div class="post-activity">
+                                <div class="post-vote post-activity-container">
+                                    <div class="post-activity-button">
+                                        <img src="assets/img/icon/upvote.svg" class="upvote-default">
+                                        <img src="assets/img/icon/upvote-active.svg" class="upvote-active">
+                                    </div>
+                                    <span class="post-vote-score">
+                                443
+                            </span>
+                                    <div class="post-activity-button">
+                                        <img src="assets/img/icon/downvote.svg" class="downvote-default">
+                                        <img src="assets/img/icon/downvote-active.svg" class="downvote-active">
+                                    </div>
+                                </div>
+                                <div class="post-comment post-activity-button post-activity-container">
+                                    <img src="assets/img/icon/comment.svg">
+                                    <span class="post-comment-amount">
+                                43
+                            </span>
+                                </div>
+                                <div class="post-share post-activity-button post-activity-container">
+                                    <img src="assets/img/icon/share.svg">
+                                    <span>
+                                Share
+                            </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="post-container">
+                        <div class="post">
+                            <div class="post-meta">
+                                <div class="post-user-info">
+                                    <img src="assets/img/avatar/avatar-2.png">
+                                    <span class="post-user-name">
+                                u/InfernalGamer92
+                            </span>
+                                </div>
+                                <div class="post-created-at">
+                                    &bull;
+                                    5 days ago
+                                </div>
+                            </div>
+                            <h2 class="post-header">
+                                Unleashing Hell Again: First Impressions of Hades 2!
+                            </h2>
+                            <div class="post-preview">
+                                Hey fellow gamers,
+
+                                I've just dived into the infernal depths of Hades 2, and I couldn't wait to share my first impressions with all of you!
+
+                                <p>
+
+                                    Gameplay: If you loved the fast-paced, rogue-like action of the original Hades, you're in for a treat. The combat feels even more refined, with new weapons and abilities that add fresh layers of strategy and excitement. The enemy variety is also impressive, keeping each run unpredictable and challenging.
+                                </p>
+                                <p>
+
+                                    Story: Supergiant Games has done it again with a gripping narrative that draws you in from the get-go. The story picks up where the first game left off, introducing new characters and expanding the lore in fascinating ways. The dialogue is sharp, witty, and packed with emotion, making every interaction memorable.
+                                </p>
+                            </div>
+                            <div class="post-activity">
+                                <div class="post-vote post-activity-container">
+                                    <div class="post-activity-button">
+                                        <img src="assets/img/icon/upvote.svg" class="upvote-default">
+                                        <img src="assets/img/icon/upvote-active.svg" class="upvote-active">
+                                    </div>
+                                    <span class="post-vote-score">
+                                443
+                            </span>
+                                    <div class="post-activity-button">
+                                        <img src="assets/img/icon/downvote.svg" class="downvote-default">
+                                        <img src="assets/img/icon/downvote-active.svg" class="downvote-active">
+                                    </div>
+                                </div>
+                                <div class="post-comment post-activity-button post-activity-container">
+                                    <img src="assets/img/icon/comment.svg">
+                                    <span class="post-comment-amount">
+                                43
+                            </span>
+                                </div>
+                                <div class="post-share post-activity-button post-activity-container">
+                                    <img src="assets/img/icon/share.svg">
+                                    <span>
+                                Share
+                            </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="post-container">
+                        <div class="post">
+                            <div class="post-meta">
+                                <div class="post-user-info">
+                                    <img src="assets/img/avatar/avatar-2.png">
+                                    <span class="post-user-name">
+                               u/_Maximum
+                            </span>
+                                </div>
+                                <div class="post-created-at">
+                                    &bull;
+                                    3 days ago
+                                </div>
+                            </div>
+                            <h2 class="post-header">
+                                "Go, Zagreus, Go!" by unoobang
+                            </h2>
+                            <div class="post-preview">
+                                <img src="assets/img/preview/preview-3.gif">
+                            </div>
+                            <div class="post-activity">
+                                <div class="post-vote post-activity-container">
+                                    <div class="post-activity-button">
+                                        <img src="assets/img/icon/upvote.svg" class="upvote-default">
+                                        <img src="assets/img/icon/upvote-active.svg" class="upvote-active">
+                                    </div>
+                                    <span class="post-vote-score">
+                                443
+                            </span>
+                                    <div class="post-activity-button">
+                                        <img src="assets/img/icon/downvote.svg" class="downvote-default">
+                                        <img src="assets/img/icon/downvote-active.svg" class="downvote-active">
+                                    </div>
+                                </div>
+                                <div class="post-comment post-activity-button post-activity-container">
+                                    <img src="assets/img/icon/comment.svg">
+                                    <span class="post-comment-amount">
+                                43
+                            </span>
+                                </div>
+                                <div class="post-share post-activity-button post-activity-container">
+                                    <img src="assets/img/icon/share.svg">
+                                    <span>
+                                Share
+                            </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="post-container">
+                        <div class="post">
+                            <div class="post-meta">
+                                <div class="post-user-info">
+                                    <img src="assets/img/avatar/avatar-2.png">
+                                    <span class="post-user-name">
+                                u/Flat-Profession-8945
+                            </span>
+                                </div>
+                                <div class="post-created-at">
+                                    &bull;
+                                    1 day ago
+                                </div>
+                            </div>
+                            <h2 class="post-header">
+                                HADES 2
+                            </h2>
+                            <div class="post-preview">
+                                <img src="assets/img/preview/preview-2.webp">
+                            </div>
+                            <div class="post-activity">
+                                <div class="post-vote post-activity-container">
+                                    <div class="post-activity-button">
+                                        <img src="assets/img/icon/upvote.svg" class="upvote-default">
+                                        <img src="assets/img/icon/upvote-active.svg" class="upvote-active">
+                                    </div>
+                                    <span class="post-vote-score">
+                                443
+                            </span>
+                                    <div class="post-activity-button">
+                                        <img src="assets/img/icon/downvote.svg" class="downvote-default">
+                                        <img src="assets/img/icon/downvote-active.svg" class="downvote-active">
+                                    </div>
+                                </div>
+                                <div class="post-comment post-activity-button post-activity-container">
+                                    <img src="assets/img/icon/comment.svg">
+                                    <span class="post-comment-amount">
+                                43
+                            </span>
+                                </div>
+                                <div class="post-share post-activity-button post-activity-container">
+                                    <img src="assets/img/icon/share.svg">
+                                    <span>
+                                Share
+                            </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="post-container">
+                        <div class="post">
+                            <div class="post-meta">
+                                <div class="post-user-info">
+                                    <img src="assets/img/avatar/avatar-2.png">
+                                    <span class="post-user-name">
+                                u/InfernalGamer92
+                            </span>
+                                </div>
+                                <div class="post-created-at">
+                                    &bull;
+                                    5 days ago
+                                </div>
+                            </div>
+                            <h2 class="post-header">
+                                Unleashing Hell Again: First Impressions of Hades 2!
+                            </h2>
+                            <div class="post-preview">
+                                Hey fellow gamers,
+
+                                I've just dived into the infernal depths of Hades 2, and I couldn't wait to share my first impressions with all of you!
+
+                                <p>
+
+                                    Gameplay: If you loved the fast-paced, rogue-like action of the original Hades, you're in for a treat. The combat feels even more refined, with new weapons and abilities that add fresh layers of strategy and excitement. The enemy variety is also impressive, keeping each run unpredictable and challenging.
+                                </p>
+                                <p>
+
+                                    Story: Supergiant Games has done it again with a gripping narrative that draws you in from the get-go. The story picks up where the first game left off, introducing new characters and expanding the lore in fascinating ways. The dialogue is sharp, witty, and packed with emotion, making every interaction memorable.
+                                </p>
+                            </div>
+                            <div class="post-activity">
+                                <div class="post-vote post-activity-container">
+                                    <div class="post-activity-button">
+                                        <img src="assets/img/icon/upvote.svg" class="upvote-default">
+                                        <img src="assets/img/icon/upvote-active.svg" class="upvote-active">
+                                    </div>
+                                    <span class="post-vote-score">
+                                443
+                            </span>
+                                    <div class="post-activity-button">
+                                        <img src="assets/img/icon/downvote.svg" class="downvote-default">
+                                        <img src="assets/img/icon/downvote-active.svg" class="downvote-active">
+                                    </div>
+                                </div>
+                                <div class="post-comment post-activity-button post-activity-container">
+                                    <img src="assets/img/icon/comment.svg">
+                                    <span class="post-comment-amount">
+                                43
+                            </span>
+                                </div>
+                                <div class="post-share post-activity-button post-activity-container">
+                                    <img src="assets/img/icon/share.svg">
+                                    <span>
+                                Share
+                            </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="post-container">
+                        <div class="post">
+                            <div class="post-meta">
+                                <div class="post-user-info">
+                                    <img src="assets/img/avatar/avatar-2.png">
+                                    <span class="post-user-name">
+                               u/_Maximum
+                            </span>
+                                </div>
+                                <div class="post-created-at">
+                                    &bull;
+                                    3 days ago
+                                </div>
+                            </div>
+                            <h2 class="post-header">
+                                "Go, Zagreus, Go!" by unoobang
+                            </h2>
+                            <div class="post-preview">
+                                <img src="assets/img/preview/preview-3.gif">
+                            </div>
+                            <div class="post-activity">
+                                <div class="post-vote post-activity-container">
+                                    <div class="post-activity-button">
+                                        <img src="assets/img/icon/upvote.svg" class="upvote-default">
+                                        <img src="assets/img/icon/upvote-active.svg" class="upvote-active">
+                                    </div>
+                                    <span class="post-vote-score">
+                                443
+                            </span>
+                                    <div class="post-activity-button">
+                                        <img src="assets/img/icon/downvote.svg" class="downvote-default">
+                                        <img src="assets/img/icon/downvote-active.svg" class="downvote-active">
+                                    </div>
+                                </div>
+                                <div class="post-comment post-activity-button post-activity-container">
+                                    <img src="assets/img/icon/comment.svg">
+                                    <span class="post-comment-amount">
+                                43
+                            </span>
+                                </div>
+                                <div class="post-share post-activity-button post-activity-container">
+                                    <img src="assets/img/icon/share.svg">
+                                    <span>
+                                Share
+                            </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="right-sidebar">
+                <div class="sidebar-community-info">
+                    <div class="sidebar-community-description">
+                        <h2 class="sidebar-community-description-title">
+                            Hades | Hades II
+                        </h2>
+                        <div class="sidebar-community-description-detailed">
+                            The subreddit for Hades and Hades II, the godlike rogue-likes from Supergiant Games.
+                        </div>
+                    </div>
+                    <div class="sidebar-community-stats">
+                        <div class="member-overall-stats">
+                            <div class="amount">603K</div>
+                            <div class="label">Members</div>
+                        </div>
+                        <div class="member-online-stats">
+                            <div class="amount">73</div>
+                            <div class="label">
+                                <div class="online-dot"></div>
+                                Online
+                            </div>
+                        </div>
+                        <div class="member-overall-stats">
+                            <div class="amount">Top 1%</div>
+                            <div class="label">Rank by size</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sidebar-image">
+                    <div class="sidebar-image-header">
+                        Sidebar Image
+                    </div>
+                    <img src="assets/img/sidebar-image-1.jpg">
+                </div>
+                <div class="filter-by-flair">
+                    <div class="filter-by-flair-header">
+                        Filter feed by flair
+                    </div>
+                    <ul class="flair-list">
+                        <li>
+                            <button class="flair-button flair-button--fan-made">
+                                <i class="fa-solid fa-image"></i>
+                                fan made
+                            </button>
+                        </li>
+                        <li>
+                            <button class="flair-button  flair-button--funny">
+                                <i class="fa-regular fa-face-grin"></i>
+                                funny
+                            </button>
+                        </li>
+                        <li>
+                            <button class="flair-button  flair-button--discussion">
+                                <i class="fa-regular fa-comments"></i>
+                                discussion
+                            </button>
+                        </li>
+                        <li>
+                            <button class="flair-button  flair-button--spoiler">
+                                <i class="fa-solid fa-circle-exclamation"></i>
+                                spoiler
+                            </button>
+                        </li>
+                        <li>
+                            <button class="flair-button  flair-button--news">
+                                <i class="fa-solid fa-newspaper"></i>
+                                news
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

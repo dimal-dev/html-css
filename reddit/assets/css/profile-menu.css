@@ -1,0 +1,139 @@
+.profile-menu {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 0;
+
+    width: 256px;
+    background-color: white;
+
+    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 8px 0, rgba(0, 0, 0, 0.25) 0 6px 12px 0;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 8px 0;
+}
+
+#profile-menu-checkbox {
+    display: none;
+}
+
+#profile-menu-checkbox:checked~.profile-menu {
+    display: block;
+}
+
+.header-action-avatar {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.header-action-avatar:hover {
+    cursor: pointer;
+}
+
+.header-action-item:hover #profile-menu-checkbox:checked~.tooltip {
+    display: none;
+}
+
+.profile-menu-section {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.profile-menu-item {
+    display: flex;
+    padding: 8px 16px;
+    gap: 8px;
+}
+
+.profile-menu-item:hover {
+    background-color: rgb(246, 248, 249);
+    cursor: pointer;
+}
+
+.profile-menu-item:active {
+    background-color: rgba(0, 0, 0, 0.16);
+}
+
+.profile-menu-item-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 32px;
+    height: 32px;
+}
+
+.profile-menu-item-icon img {
+    width: 20px;
+    height: 20px;
+}
+
+.profile-menu-item-icon--avatar img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+
+.profile-menu-item-info {
+    flex: 1;
+}
+
+.profile-menu .online-indicator--profile-menu {
+    top: 29px;
+    right: -1px;
+}
+
+.profile-menu-item-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2px;
+}
+
+.profile-menu-item-title {
+    color: rgb(33, 39, 42);
+    font-size: 14px;
+}
+
+.profile-menu-item-info-extra {
+    color: rgb(87, 111, 118);
+    font-size: 12px;
+}
+
+.profile-menu-item-info-extra--gold-earned {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.profile-menu-item-title--dark-mode {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-action-item--profile-menu:hover {
+    background-color: initial;
+}
+
+.header-action-item:active {
+    background-color: initial;
+}
+
+.header-action-avatar:hover {
+    background-color: rgb(219, 228, 233);
+    cursor: pointer;
+}
+
+.header-action-avatar:active {
+    background-color: #C9D7DE;
+}

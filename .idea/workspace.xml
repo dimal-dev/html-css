@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="83aba088-8d10-44b8-a84b-96d8ce0829b5" name="Changes" comment="1" />
+    <list default="true" id="83aba088-8d10-44b8-a84b-96d8ce0829b5" name="Changes" comment="Update" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,41 +28,41 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;JavaScript Debug.3-3.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.3-33.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.4-4.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.4-5.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.4-7.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.4-8.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.lesson-03.html.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/dima/YouTube/DimaL. Code/html-css/assets&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JavaScript Debug.3-3.html.executor": "Run",
+    "JavaScript Debug.3-33.html.executor": "Run",
+    "JavaScript Debug.4-4.html.executor": "Run",
+    "JavaScript Debug.4-5.html.executor": "Run",
+    "JavaScript Debug.4-7.html.executor": "Run",
+    "JavaScript Debug.4-8.html.executor": "Run",
+    "JavaScript Debug.lesson-03.html.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/Users/dima/YouTube/DimaL. Code/html-css",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
-      &quot;TEXT&quot;,
-      &quot;HTML&quot;,
-      &quot;CSS&quot;
+  "keyToStringList": {
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "TEXT",
+      "HTML",
+      "CSS"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/solutions/tutorial-01" />
       <recent name="$PROJECT_DIR$/assets" />
       <recent name="$PROJECT_DIR$/tutorial/tutorial-07" />
       <recent name="$PROJECT_DIR$/exercise/tutorial-06" />
-      <recent name="$PROJECT_DIR$/exercise/tutorial-03/images" />
-      <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/assets" />
@@ -109,14 +109,7 @@
       <workItem from="1724067584361" duration="7208000" />
       <workItem from="1724240357976" duration="3735000" />
       <workItem from="1725010447472" duration="630000" />
-    </task>
-    <task id="LOCAL-00021" summary="1">
-      <option name="closed" value="true" />
-      <created>1721722241984</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1721722241984</updated>
+      <workItem from="1725023026196" duration="1302000" />
     </task>
     <task id="LOCAL-00022" summary="1">
       <option name="closed" value="true" />
@@ -502,7 +495,15 @@
       <option name="project" value="LOCAL" />
       <updated>1724240344329</updated>
     </task>
-    <option name="localTasksCounter" value="70" />
+    <task id="LOCAL-00070" summary="Update">
+      <option name="closed" value="true" />
+      <created>1725023199554</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1725023199555</updated>
+    </task>
+    <option name="localTasksCounter" value="71" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -522,6 +523,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="favicon added" />
     <MESSAGE value="1" />
-    <option name="LAST_COMMIT_MESSAGE" value="1" />
+    <MESSAGE value="Update" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update" />
   </component>
 </project>
