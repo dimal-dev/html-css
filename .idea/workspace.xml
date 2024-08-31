@@ -28,34 +28,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "JavaScript Debug.3-3.html.executor": "Run",
-    "JavaScript Debug.3-33.html.executor": "Run",
-    "JavaScript Debug.4-4.html.executor": "Run",
-    "JavaScript Debug.4-5.html.executor": "Run",
-    "JavaScript Debug.4-7.html.executor": "Run",
-    "JavaScript Debug.4-8.html.executor": "Run",
-    "JavaScript Debug.lesson-03.html.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/dima/YouTube/DimaL. Code/html-css",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;JavaScript Debug.3-3.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.3-33.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.4-4.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.4-5.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.4-7.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.4-8.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.lesson-03.html.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/dima/YouTube/DimaL. Code/html-css&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
-      "TEXT",
-      "HTML",
-      "CSS"
+  &quot;keyToStringList&quot;: {
+    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
+      &quot;TEXT&quot;,
+      &quot;HTML&quot;,
+      &quot;CSS&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
@@ -65,11 +65,11 @@
       <recent name="$PROJECT_DIR$/exercise/tutorial-06" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/solutions/tutorial-01" />
       <recent name="$PROJECT_DIR$/assets" />
       <recent name="$PROJECT_DIR$/exercise/lesson-03/images" />
       <recent name="$PROJECT_DIR$/lesson/lesson-4" />
       <recent name="$PROJECT_DIR$/exercise/assets/images" />
-      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="SharedIndexes">
