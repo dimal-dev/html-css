@@ -28,41 +28,41 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;JavaScript Debug.3-3.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.3-33.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.4-4.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.4-5.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.4-7.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.4-8.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.lesson-03.html.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/dima/YouTube/DimaL. Code/html-css&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JavaScript Debug.3-3.html.executor": "Run",
+    "JavaScript Debug.3-33.html.executor": "Run",
+    "JavaScript Debug.4-4.html.executor": "Run",
+    "JavaScript Debug.4-5.html.executor": "Run",
+    "JavaScript Debug.4-7.html.executor": "Run",
+    "JavaScript Debug.4-8.html.executor": "Run",
+    "JavaScript Debug.lesson-03.html.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/Users/dima/YouTube/DimaL. Code/html-css/solutions/tutorial-02",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "reference.settings.ide.settings.web.browsers",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
-      &quot;TEXT&quot;,
-      &quot;HTML&quot;,
-      &quot;CSS&quot;
+  "keyToStringList": {
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "TEXT",
+      "HTML",
+      "CSS"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/solutions/tutorial-02" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/solutions/tutorial-01" />
       <recent name="$PROJECT_DIR$/assets" />
       <recent name="$PROJECT_DIR$/tutorial/tutorial-07" />
-      <recent name="$PROJECT_DIR$/exercise/tutorial-06" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/solutions/tutorial-01" />
@@ -110,14 +110,6 @@
       <workItem from="1724240357976" duration="3735000" />
       <workItem from="1725010447472" duration="630000" />
       <workItem from="1725023026196" duration="1302000" />
-    </task>
-    <task id="LOCAL-00022" summary="1">
-      <option name="closed" value="true" />
-      <created>1721724217057</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1721724217057</updated>
     </task>
     <task id="LOCAL-00023" summary="1">
       <option name="closed" value="true" />
@@ -503,7 +495,15 @@
       <option name="project" value="LOCAL" />
       <updated>1725023199555</updated>
     </task>
-    <option name="localTasksCounter" value="71" />
+    <task id="LOCAL-00071" summary="Update">
+      <option name="closed" value="true" />
+      <created>1725101211202</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1725101211202</updated>
+    </task>
+    <option name="localTasksCounter" value="72" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
