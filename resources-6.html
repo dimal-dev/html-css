@@ -71,7 +71,7 @@
             <h1 class="text-center pb-5">
                 Tutorial 6. Resources for Practice
             </h1>
-            <div>
+            <div class="links-wrapper">
                 <h2>Links (URLs)</h2>
                 <ul class="links">
                     <li>
@@ -105,26 +105,29 @@
                     </li>
                 </ul>
             </div>
+            <hr>
             <div class="images">
                 <hr>
                 <h2>Images</h2>
-                <img src="./assets/tutorial-6-images/cake.png">
-                <img src="./assets/tutorial-6-images/code-1.png">
-                <img src="./assets/tutorial-6-images/code-2.png">
-                <img src="./assets/tutorial-6-images/hollow-star.png">
-                <img src="./assets/tutorial-6-images/icon-1.png">
-                <img src="./assets/tutorial-6-images/img-1.jpg">
-                <img src="./assets/tutorial-6-images/img-2.jpg">
-                <img src="./assets/tutorial-6-images/img-3.webp">
-                <img src="./assets/tutorial-6-images/logo-1.png">
-                <img src="./assets/tutorial-6-images/logo-2.png">
-                <img src="./assets/tutorial-6-images/menu.svg">
-                <img src="./assets/tutorial-6-images/parts-1.png">
-                <img src="./assets/tutorial-6-images/parts-2.png">
-                <img src="./assets/tutorial-6-images/star.svg">
-                <img src="./assets/tutorial-6-images/star-2.png">
-                <img src="./assets/tutorial-6-images/star-3.png">
-                <img src="./assets/tutorial-6-images/yellow-circle.png">
+                <div>
+                    <img src="./assets/tutorial-6-images/cake.png">
+                    <img src="./assets/tutorial-6-images/code-1.png">
+                    <img src="./assets/tutorial-6-images/code-2.png">
+                    <img src="./assets/tutorial-6-images/hollow-star.png">
+                    <img src="./assets/tutorial-6-images/icon-1.png">
+                    <img src="./assets/tutorial-6-images/img-1.jpg">
+                    <img src="./assets/tutorial-6-images/img-2.jpg">
+                    <img src="./assets/tutorial-6-images/img-3.webp">
+                    <img src="./assets/tutorial-6-images/logo-1.png">
+                    <img src="./assets/tutorial-6-images/logo-2.png">
+                    <img src="./assets/tutorial-6-images/menu.svg">
+                    <img src="./assets/tutorial-6-images/parts-1.png">
+                    <img src="./assets/tutorial-6-images/parts-2.png">
+                    <img src="./assets/tutorial-6-images/star.svg">
+                    <img src="./assets/tutorial-6-images/star-2.png">
+                    <img src="./assets/tutorial-6-images/star-3.png">
+                    <img src="./assets/tutorial-6-images/yellow-circle.png">
+                </div>
             </div>
         </main>
     </div>
@@ -145,6 +148,13 @@
 
 
 <style>
+    .images {
+        padding: 0 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     .images img {
         display: inline-block;
         max-width: 350px;
@@ -161,6 +171,19 @@
 
     .links > li {
         border-bottom: 1px solid #dddddd;
+        padding-bottom: 10px;
+    }
+
+    .links > li {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .links-wrapper {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
     }
 </style>
 
