@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on selectors</title>
+    <style>
+        .food-list-item,
+        .animal-list li,
+        .website-list li {
+            border: 1px dotted red;
+        }
+
+        .food-list > .text-bold span {
+            font-weight: bold;
+        }
+
+        .food-list {
+            border: 2px dotted papayawhip;
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .animal-list,
+        .website-list {
+            list-style: none;
+            padding-left: 0;
+        }
+    </style>
+</head>
+<body>
+    <ul class="food-list">
+        <li>List Items</li>
+        <li>List Items</li>
+        <li>List Items</li>
+        <li>List Items</li>
+        <li>List Items</li>
+        <li>List Items</li>
+        <li>List Items</li>
+        <li>
+            List Items
+            <div></div>
+            <a href=""></a>
+            <img>
+        </li>
+
+        <li class="food-list-item">
+            Pizza
+            <span class="text-bold">
+                        Test 1
+                    </span>
+        </li>
+        <li class="food-list-item">Burger</li>
+        <li class="food-list-item text-bold">
+            Steak
+            <span>
+                    Test 2
+                </span>
+        </li>
+    </ul>
+    <ul class="animal-list">
+        <li>Tiger</li>
+        <li>Panda</li>
+        <li>Dolphin</li>
+    </ul>
+    <ul class="website-list">
+        <li>Google</li>
+        <li>StackOverflow</li>
+        <li>GitHub</li>
+    </ul>
+</body>
+</html>
