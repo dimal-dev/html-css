@@ -102,15 +102,12 @@
     display: flex;
     padding: 10px 16px;
 
-    width: 560px;
+    width: 528px;
 
     border-radius: 20px;
 
     align-items: center;
     gap: 10px;
-    box-sizing: border-box;
-
-    /*z-index: 2;*/
 }
 
 .search:hover {
