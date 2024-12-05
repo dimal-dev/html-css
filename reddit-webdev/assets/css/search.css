@@ -16,13 +16,10 @@
 }
 
 .opened-search-scrollable {
+    margin-top: 7px;
+    border-top: 1px solid rgba(0, 0, 0, .1);
     max-height: calc(100vh - 56px - 12px);
     overflow-x: auto;
-}
-
-.opened-search-content-divider {
-    margin-top: 8px;
-    border-top: 1px solid rgba(0, 0, 0, .1);
 }
 
 .search-input:focus~.opened-search,
