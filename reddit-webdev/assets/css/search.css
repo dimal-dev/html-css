@@ -136,7 +136,7 @@
 .trending-today-header {
     display: flex;
     margin: 12px 0 0 16px;
-    gap: 4px;
+    gap: 8px;
     align-items: center;
 }
 
