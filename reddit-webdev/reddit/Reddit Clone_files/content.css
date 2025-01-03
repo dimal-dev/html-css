@@ -186,7 +186,6 @@
      */
     position: sticky;
     top: 57px;
-    overflow: auto;
     width: 270px;
     background-color: rgb(245, 245, 245);
     border-radius: 8px;

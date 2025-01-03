@@ -11,7 +11,7 @@
     border-right: 1px solid rgba(0, 0, 0, 0.2);
     height: calc(100vh - 57px);
     overflow-y: auto;
-    scrollbar-width: thick;
+    scrollbar-width: thin;
     scrollbar-color: transparent  transparent;
 }
 

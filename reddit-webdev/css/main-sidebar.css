@@ -7,7 +7,7 @@
     top: 70px;
     height: calc(100vh - 70px);
     overflow-y: auto;
-    scrollbar-width: thick;
+    scrollbar-width: thin;
     scrollbar-color: transparent  transparent;
     flex-shrink: 0;
 }
