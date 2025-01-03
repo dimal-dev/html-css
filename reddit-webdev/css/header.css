@@ -1,0 +1,200 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    height: 56px;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+}
+
+.reddit-logo {
+    width: 115px;
+}
+
+.header-actions {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.header-action {
+    position: relative;
+}
+
+.header-action > button {
+    border: none;
+    background-color: transparent;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+}
+
+.header-action > button:hover {
+    background-color: rgb(219, 228, 233);
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.header-action > button:active {
+    background-color: transparent;
+}
+
+.header-action-avatar {
+    width: 32px;
+    border-radius: 50%;
+}
+
+.notification-counter {
+    position: absolute;
+    top: 4px;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    color: white;
+    width: 16px;
+    height: 16px;
+    font-size: 10px;
+    border-radius: 50%;
+}
+
+.online-indicator {
+    position: absolute;
+    right: 3px;
+    bottom: 3px;
+    background-color: rgb(1, 168, 22);
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    border: 1px solid white;
+}
+
+.header-action-tooltip {
+    display: none;
+    position: absolute;
+    padding: 5px 15px;
+    background-color: #444444;
+    color: white;
+    border-radius: 3px;
+    font-size: 16px;
+    white-space: nowrap;
+    left: 50%;
+    bottom: -37px;
+    transform: translateX(-50%);
+}
+
+.header-action > button:hover .header-action-tooltip {
+    display: block;
+}
+
+.profile-menu-button .header-action-tooltip {
+    right: 0;
+    left: auto;
+    transform: none;
+}
+
+.profile-menu {
+    display: none;
+    position: absolute;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 8px 0, rgba(0, 0, 0, 0.25) 0 6px 12px 0;
+    background-color: white;
+    border-radius: 10px;
+    top: 50px;
+    right: 0;
+    width: 256px;
+}
+
+.profile-menu-visibility {
+    display: none;
+}
+
+.profile-menu-visibility:checked ~ .profile-menu {
+    display: block;
+}
+
+.header-action-avatar-label:hover {
+    cursor: pointer;
+}
+
+.profile-menu-visibility:checked ~ .profile-menu-button:hover .header-action-tooltip {
+    display: none;
+}
+
+.profile-menu {
+    list-style: none;
+    padding: 8px 0;
+    margin: 0;
+}
+
+.profile-menu-item {
+    display: flex;
+    gap: 10px;
+    padding: 8px 16px;
+    align-items: center;
+}
+
+.profile-menu-item:hover {
+    background-color: rgb(246, 248, 249);
+    cursor: pointer;
+}
+
+.profile-menu-item:active {
+    background-color: rgba(0, 0, 0, 0.16);
+}
+
+.profile-menu-item-left {
+    width: 32px;
+    height: 32px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-menu-item-right {
+    flex-grow: 1;
+}
+
+.profile-menu-item-icon {
+    max-width: 100%;
+}
+
+.profile-menu-item-icon-avatar {
+    border-radius: 50%;
+}
+
+.online-indicator-profile-menu {
+    right: -1px;
+    bottom: -1px;
+}
+
+.profile-menu-item-title {
+    color: rgb(33, 39, 42);
+    font-size: 14px;
+}
+
+.profile-menu-item-extra {
+    margin-top: 2px;
+    color: rgb(87, 111, 118);
+    font-size: 12px;
+}
+
+.profile-menu-item-gold {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.profile-menu-item-dark-mode {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
