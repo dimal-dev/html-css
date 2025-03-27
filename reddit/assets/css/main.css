@@ -1,0 +1,10 @@
+body {
+    margin: 0;
+    font-family: Roboto, sans-serif;
+    padding-top: 56px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}

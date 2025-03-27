@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<!-- saved from url=(0061)https://dimal-dev.github.io/html-css/reddit-webdev/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Reddit Clone</title>
+
+    <link rel="stylesheet" href="./Reddit Clone_files/main.css">
+    <link rel="stylesheet" href="./Reddit Clone_files/header.css">
+    <link rel="stylesheet" href="./Reddit Clone_files/search.css">
+    <link rel="stylesheet" href="./Reddit Clone_files/profile-menu.css">
+    <link rel="stylesheet" href="./Reddit Clone_files/sidebar.css">
+    <link rel="stylesheet" href="./Reddit Clone_files/content.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link href="./Reddit Clone_files/css2" rel="stylesheet">
+
+    <link rel="stylesheet" href="./Reddit Clone_files/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body>
+<div class="main-header">
+    <a class="reddit-logo" href="https://dimal-dev.github.io/html-css/reddit-webdev/index.html">
+        <img src="./Reddit Clone_files/reddit-logo.png">
+        <!--            <img src="assets/img/reddit-logo.svg">-->
+        <!--            <img src="assets/img/reddit.svg" class="reddit-logo-word">-->
+    </a>
+
+    <div class="search">
+        <label for="input-search" class="search-icon-container">
+            <img src="./Reddit Clone_files/search.svg">
+        </label>
+        <input type="text" class="search-input" placeholder="Search Reddit" id="input-search">
+        <div class="opened-search">
+            <div class="opened-search-content-divider"></div>
+            <div class="opened-search-scrollable">
+                <div class="resent-searches">
+                    <div class="resent-searches-item">
+                        <div class="resent-search-logo-container">
+                            <img src="./Reddit Clone_files/community-icon-1.jpg">
+                        </div>
+                        <div class="resent-search-title">
+                            r/webdev
+                        </div>
+                        <span class="resent-search-close-icon-container">
+                        <img src="./Reddit Clone_files/close.svg">
+                    </span>
+                    </div>
+                    <div class="resent-searches-item">
+                        <div class="resent-search-logo-container">
+                            <img src="./Reddit Clone_files/community-icon-3.png">
+                        </div>
+                        <div class="resent-search-title">
+                            r/react
+                        </div>
+                        <span class="resent-search-close-icon-container">
+                        <img src="./Reddit Clone_files/close.svg">
+                    </span>
+                    </div>
+                    <div class="resent-searches-item">
+                        <div class="resent-search-logo-container">
+                            <img src="./Reddit Clone_files/community-icon-4.png">
+                        </div>
+                        <div class="resent-search-title">
+                            r/JS
+                        </div>
+                        <span class="resent-search-close-icon-container">
+                        <img src="./Reddit Clone_files/close.svg">
+                    </span>
+                    </div>
+                    <div class="resent-searches-item">
+                        <div class="resent-search-logo-container">
+                            <img src="./Reddit Clone_files/community-icon-5.png">
+                        </div>
+                        <div class="resent-search-title">
+                            r/python
+                        </div>
+                        <span class="resent-search-close-icon-container">
+                        <img src="./Reddit Clone_files/close.svg">
+                    </span>
+                    </div>
+                    <div class="resent-searches-item">
+                        <div class="resent-search-logo-container">
+                            <img src="./Reddit Clone_files/community-icon-6.png">
+                        </div>
+                        <div class="resent-search-title">
+                            r/css
+                        </div>
+                        <span class="resent-search-close-icon-container">
+                        <img src="./Reddit Clone_files/close.svg">
+                    </span>
+                    </div>
+                </div>
+                <div class="trending-today">
+                    <div class="trending-today-header">
+                        <div class="trending-today-icon">
+                            <img src="./Reddit Clone_files/trending.svg">
+                        </div>
+                        <div class="trending-today-title">
+                            Trending Today
+                        </div>
+                    </div>
+                    <ul class="trending-today-items-container">
+                        <li class="trending-today-item">
+                            <div class="trending-today-item-info">
+                                <div class="trending-today-item-header">
+                                    Yankees force WS Game 5
+                                </div>
+                                <div class="trending-today-item-body">
+                                    FINAL: The New York Yankees take Game 4 of the World Series
+                                </div>
+                                <div class="trending-today-item-source">
+                                    <div class="trending-today-item-avatar">
+                                        <img src="./Reddit Clone_files/avatar-4.png">
+                                    </div>
+                                    <div class="trending-today-item-name">
+                                        r/mlb and more
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="trending-today-item-preview">
+                                <img src="./Reddit Clone_files/preview-4.jpg">
+                            </div>
+                        </li>
+                        <li class="trending-today-item">
+                            <div class="trending-today-item-info">
+                                <div class="trending-today-item-header">
+                                    Stanley Cup Final
+                                </div>
+                                <div class="trending-today-item-body">
+                                    Playoff Game Thread: Florida Panthers (3-2) at Edmonton Oilers (2-3) - Game 6 -
+                                    21 Jun 2024 - 06:00PM MDT
+                                </div>
+                                <div class="trending-today-item-source">
+                                    <div class="trending-today-item-avatar">
+                                        <img src="./Reddit Clone_files/avatar-1.png">
+                                    </div>
+                                    <div class="trending-today-item-name">
+                                        r/hockey and more
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="trending-today-item-preview">
+                                <img src="./Reddit Clone_files/preview-1.jpg">
+                            </div>
+                        </li>
+                        <li class="trending-today-item">
+                            <div class="trending-today-item-info">
+                                <div class="trending-today-item-header">
+                                    Concord developer shut down
+                                </div>
+                                <div class="trending-today-item-body">
+                                    PlayStation has closed Concord developer Firewalk | VGC
+                                </div>
+                                <div class="trending-today-item-source">
+                                    <div class="trending-today-item-avatar">
+                                        <img src="./Reddit Clone_files/avatar-3.png">
+                                    </div>
+                                    <div class="trending-today-item-name">
+                                        r/gaming and more
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="trending-today-item-preview">
+                                <img src="./Reddit Clone_files/preview-5.jpg">
+                            </div>
+                        </li>
+                        <li class="trending-today-item">
+                            <div class="trending-today-item-info">
+                                <div class="trending-today-item-header">
+                                    Tekashi 6ix9ine arrested
+                                </div>
+                                <div class="trending-today-item-body">
+                                    Rapper Tekashi 6ix9ine arrested after he's accused of violating the conditions
+                                    of his release
+                                </div>
+                                <div class="trending-today-item-source">
+                                    <div class="trending-today-item-avatar">
+                                        <img src="./Reddit Clone_files/avatar-5.png">
+                                    </div>
+                                    <div class="trending-today-item-name">
+                                        r/news and more
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="trending-today-item-preview">
+                                <img src="./Reddit Clone_files/preview-6.jpg">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-actions-container">
+        <div class="header-action-item">
+            <img src="./Reddit Clone_files/advertise.svg">
+            <div class="tooltip">
+                Advertise on Reddit
+            </div>
+        </div>
+        <div class="header-action-item">
+            <img src="./Reddit Clone_files/chat.svg">
+            <div class="tooltip">
+                Open chat
+            </div>
+        </div>
+        <div class="header-action-item">
+            <img src="./Reddit Clone_files/create-post.svg">
+            <div class="tooltip">
+                Create post
+            </div>
+        </div>
+        <div class="header-action-item header-action-item--inbox">
+            <img src="./Reddit Clone_files/open-inbox.svg">
+            <div class="notifications-indicator">1</div>
+            <div class="tooltip">
+                Open inbox
+            </div>
+        </div>
+        <div class="header-action-item header-action-item--profile-menu">
+            <label for="profile-menu-checkbox" class="header-action-avatar">
+                <img src="./Reddit Clone_files/avatar.png" class="avatar-img">
+                <div class="online-indicator"></div>
+            </label>
+
+            <input type="checkbox" id="profile-menu-checkbox">
+            <div class="profile-menu">
+                <ul class="profile-menu-section">
+                    <li class="profile-menu-item">
+                        <div class="profile-menu-item-icon profile-menu-item-icon--avatar">
+                            <img src="./Reddit Clone_files/avatar.png">
+                            <div class="online-indicator online-indicator--profile-menu"></div>
+                        </div>
+                        <div class="profile-menu-item-info">
+                            <span class="profile-menu-item-title">
+                                View Profile
+                            </span>
+                            <span class="profile-menu-item-info-extra">
+                                u/Curious_Volume3530
+                            </span>
+                        </div>
+                    </li>
+                    <li class="profile-menu-item">
+                        <div class="profile-menu-item-icon">
+                            <img src="./Reddit Clone_files/edit-avatar.svg">
+                        </div>
+                        <div class="profile-menu-item-info">
+                            <span class="profile-menu-item-title">
+                                Edit Avatar
+                            </span>
+                        </div>
+                    </li>
+                    <li class="profile-menu-item">
+                        <div class="profile-menu-item-icon">
+                            <img src="./Reddit Clone_files/achievements.svg">
+                        </div>
+                        <div class="profile-menu-item-info">
+                                <span class="profile-menu-item-title">
+                                    Achievements
+                                </span>
+                            <span class="profile-menu-item-info-extra">
+                                    3 unlocked
+                                </span>
+                        </div>
+                    </li>
+                    <li class="profile-menu-item">
+                        <div class="profile-menu-item-icon">
+                            <img src="./Reddit Clone_files/contributor-program.svg">
+                        </div>
+                        <div class="profile-menu-item-info">
+                                <span class="profile-menu-item-title">
+                                    Contributor Program
+                                </span>
+                            <span class="profile-menu-item-info-extra profile-menu-item-info-extra--gold-earned">
+                                    <img src="./Reddit Clone_files/gold.svg"> 12 gold earned
+                                </span>
+                        </div>
+                    </li>
+                    <li class="profile-menu-item">
+                        <div class="profile-menu-item-icon">
+                            <img src="./Reddit Clone_files/dark-mode.svg">
+                        </div>
+                        <div class="profile-menu-item-info">
+                            <label class="profile-menu-item-title profile-menu-item-title--dark-mode">
+                                Dark Mode
+                                <input type="checkbox">
+                            </label>
+                        </div>
+                    </li>
+                    <li class="profile-menu-item">
+                        <div class="profile-menu-item-icon">
+                            <img src="./Reddit Clone_files/logout.svg">
+                        </div>
+                        <div class="profile-menu-item-info">
+                                <span class="profile-menu-item-title">
+                                    Log Out
+                                </span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="tooltip tooltip--right">
+                Open profile menu
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="sidebar">
+    <div class="sidebar-section">
+        <ul class="sidebar-list">
+            <li class="item">
+                <div class="icon">
+                    <img src="./Reddit Clone_files/home.svg">
+                </div>
+                <div class="details">
+                    Home
+                </div>
+            </li>
+            <li class="item">
+                <div class="icon">
+                    <img src="./Reddit Clone_files/popular.svg">
+                </div>
+                <div class="details">
+                    Popular
+                </div>
+            </li>
+            <li class="item">
+                <div class="icon">
+                    <img src="./Reddit Clone_files/all.svg">
+                </div>
+                <div class="details">
+                    All
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="sidebar-section">
+        <input type="checkbox" id="sidebar-section-collapse-checkbox-1" class="collapse-checkbox">
+        <label for="sidebar-section-collapse-checkbox-1" class="sidebar-collapse-label">
+            <span>Custom feeds</span>
+            <img src="./Reddit Clone_files/down.svg">
+        </label>
+        <ul class="sidebar-list">
+            <li class="item">
+                <div class="icon">
+                    <img src="./Reddit Clone_files/plus.svg">
+                </div>
+                <div class="details">
+                    Create a custom feed
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="sidebar-section">
+        <input type="checkbox" id="sidebar-section-collapse-checkbox-2" class="collapse-checkbox">
+        <label for="sidebar-section-collapse-checkbox-2" class="sidebar-collapse-label">
+            <span>Recent</span>
+            <img src="./Reddit Clone_files/down.svg">
+        </label>
+        <ul class="sidebar-list">
+            <li class="item">
+                <div class="icon icon--round">
+                    <img src="./Reddit Clone_files/community-icon-1.jpg">
+                </div>
+                <div class="details">
+                    r/webdev
+                </div>
+            </li>
+            <li class="item">
+                <div class="icon icon--round">
+                    <img src="./Reddit Clone_files/community-icon-3.png">
+                </div>
+                <div class="details">
+                    r/react
+                </div>
+            </li>
+            <li class="item">
+                <div class="icon icon--round">
+                    <img src="./Reddit Clone_files/community-icon-5.png">
+                </div>
+                <div class="details">
+                    r/python
+                </div>
+            </li>
+            <li class="item icon--round">
+                <div class="icon">
+                    <img src="./Reddit Clone_files/community-icon-2.png">
+                </div>
+                <div class="details">
+                    r/ChatGPT
+                </div>
+            </li>
+            <li class="item">
+                <div class="icon icon--round">
+                    <img src="./Reddit Clone_files/community-icon-4.png">
+                </div>
+                <div class="details">
+                    r/JS
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="sidebar-section">
+        <input type="checkbox" id="sidebar-section-collapse-checkbox-3" class="collapse-checkbox">
+        <label for="sidebar-section-collapse-checkbox-3" class="sidebar-collapse-label">
+            <span>Communities</span>
+            <img src="./Reddit Clone_files/down.svg">
+        </label>
+        <ul class="sidebar-list">
+            <li class="item">
+                <div class="icon icon--round">
+                    <img src="./Reddit Clone_files/plus.svg">
+                </div>
+                <div class="details">
+                    Create a community
+                </div>
+            </li>
+            <li class="item">
+                <div class="icon icon--round">
+                    <img src="./Reddit Clone_files/community-icon-6.png">
+                </div>
+                <div class="details">
+                    r/css
+
+                    <div class="make-favourite">
+                        <img src="./Reddit Clone_files/star.svg">
+                    </div>
+                </div>
+            </li>
+            <li class="item">
+                <div class="icon icon--round">
+                    <img src="./Reddit Clone_files/community-icon-7.png">
+                </div>
+                <div class="details">
+                    r/django
+
+                    <div class="make-favourite">
+                        <img src="./Reddit Clone_files/star.svg">
+                    </div>
+                </div>
+            </li>
+            <li class="item">
+                <div class="icon icon--round">
+                    <img src="./Reddit Clone_files/community-icon-8.png">
+                </div>
+                <div class="details">
+                    r/node
+
+                    <div class="make-favourite">
+                        <img src="./Reddit Clone_files/star.svg">
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="sidebar-section">
+        <input type="checkbox" id="sidebar-section-collapse-checkbox-4" class="collapse-checkbox">
+        <label for="sidebar-section-collapse-checkbox-4" class="sidebar-collapse-label">
+            <span>Resources</span>
+            <img src="./Reddit Clone_files/down.svg">
+        </label>
+        <ul class="sidebar-list">
+            <li class="item">
+                <div class="icon">
+                    <img src="./Reddit Clone_files/about-reddit.svg">
+                </div>
+                <div class="details">
+                    About Reddit
+                </div>
+            </li>
+            <li class="item">
+                <div class="icon">
+                    <img src="./Reddit Clone_files/advertise-2.svg">
+                </div>
+                <div class="details">
+                    Advertise
+                </div>
+            </li>
+            <li class="item">
+                <div class="icon">
+                    <img src="./Reddit Clone_files/help.svg">
+                </div>
+                <div class="details">
+                    Help
+                </div>
+            </li>
+            <li class="item">
+                <div class="icon">
+                    <img src="./Reddit Clone_files/blog.svg">
+                </div>
+                <div class="details">
+                    Blog
+                </div>
+            </li>
+            <li class="item">
+                <div class="icon">
+                    <img src="./Reddit Clone_files/careers.svg">
+                </div>
+                <div class="details">
+                    Careers
+                </div>
+            </li>
+            <li class="item">
+                <div class="icon">
+                    <img src="./Reddit Clone_files/press.svg">
+                </div>
+                <div class="details">
+                    Press
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="sidebar-section">
+        <ul class="sidebar-list">
+            <li class="item">
+                <div class="icon">
+                    <img src="./Reddit Clone_files/communities.svg">
+                </div>
+                <div class="details">
+                    Communities
+                </div>
+            </li>
+            <li class="item">
+                <div class="icon">
+                    <img src="./Reddit Clone_files/best-of-reddit.svg">
+                </div>
+                <div class="details">
+                    Best of Reddit
+                </div>
+            </li>
+            <li class="item">
+                <div class="icon">
+                    <img src="./Reddit Clone_files/topics.svg">
+                </div>
+                <div class="details">
+                    Topics
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="sidebar-section">
+        <ul class="sidebar-list">
+            <li class="item">
+                <div class="icon">
+                    <img src="./Reddit Clone_files/content-policy.svg">
+                </div>
+                <div class="details">
+                    Content Policy
+                </div>
+            </li>
+            <li class="item">
+                <div class="icon">
+                    <img src="./Reddit Clone_files/privacy-policy.svg">
+                </div>
+                <div class="details">
+                    Privacy Policy
+                </div>
+            </li>
+            <li class="item">
+                <div class="icon">
+                    <img src="./Reddit Clone_files/user-agreement.svg">
+                </div>
+                <div class="details">
+                    User Agreement
+                </div>
+            </li>
+        </ul>
+        <div class="copyright">
+            <a href="https://www.reddit.com/">
+                Reddit Clone © 2024.
+            </a>
+        </div>
+    </div>
+</div>
+<div class="content-wrapper">
+    <div class="content">
+        <div class="content-head">
+            <div class="banner">
+                <img src="./Reddit Clone_files/community-banner.png">
+            </div>
+            <div class="banner-info">
+                <div class="banner-community">
+                    <img src="./Reddit Clone_files/community-icon-1.jpg" class="banner-community-icon">
+                    <h1 class="banner-community-title">
+                        r/webdev
+                    </h1>
+                </div>
+                <div class="banner-actions">
+                    <button class="create-post">
+                        <img src="./Reddit Clone_files/plus.svg"> Create a post
+                    </button>
+                    <button class="join">
+                        Join
+                    </button>
+                    <div class="more-wrapper">
+                        <input type="checkbox" id="more-menu-toggle-checkbox">
+                        <label class="more-button" for="more-menu-toggle-checkbox">
+                            <img src="./Reddit Clone_files/three-dots.svg">
+                        </label>
+                        <ul class="more-menu">
+                            <li class="more-menu-item">
+                                Add to custom feed
+                            </li>
+                            <li class="more-menu-item">
+                                Add to favourites
+                            </li>
+                            <li class="more-menu-item">Mute r/webdev</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content-body">
+            <div class="content-main">
+                <div class="post-list">
+                    <div class="post-container">
+                        <div class="post">
+                            <div class="post-meta">
+                                <div class="post-user-info">
+                                    <img src="./Reddit Clone_files/avatar.png">
+                                    <span class="post-user-name">
+                                u/QuinnHannan1
+                            </span>
+                                </div>
+                                <div class="post-created-at">
+                                    •
+                                    5 days ago
+                                </div>
+                            </div>
+                            <h2 class="post-header">
+                                I fired a great dev and wasted $50,000
+                            </h2>
+                            <div class="post-preview">
+                                <p>
+                                    I almost killed my startup before it even launched.
+                                </p>
+                                <p>
+                                    I started building my tech startup 18 months ago. As a non technical founder, I
+                                    hired a web dev from Pakistan to help build my idea. He was doing good work but I
+                                    got impatient and wanted to move faster.
+                                </p>
+                                <p>
+                                    I made a HUGE mistake. I put my reliable developer on pause and hired an agency that
+                                    promised better results. They seemed professional at first but I soon realized I was
+                                    just one of many clients. My project wasn't a priority for them.
+                                </p>
+                                <p>
+                                    After wasting so much time and money, I went back to my original Pakistani
+                                    developer. He thankfully accepted the job again and is now doing amazing work, and
+                                    we're finally...
+                                </p>
+                            </div>
+                            <div class="post-activity">
+                                <div class="post-vote post-activity-container">
+                                    <div class="post-activity-button">
+                                        <img src="./Reddit Clone_files/upvote.svg" class="upvote-default">
+                                        <img src="./Reddit Clone_files/upvote-active.svg" class="upvote-active">
+                                    </div>
+                                    <span class="post-vote-score">
+                                720
+                            </span>
+                                    <div class="post-activity-button">
+                                        <img src="./Reddit Clone_files/downvote.svg" class="downvote-default">
+                                        <img src="./Reddit Clone_files/downvote-active.svg" class="downvote-active">
+                                    </div>
+                                </div>
+                                <div class="post-comment post-activity-button post-activity-container">
+                                    <img src="./Reddit Clone_files/comment.svg">
+                                    <span class="post-comment-amount">
+                                99
+                            </span>
+                                </div>
+                                <div class="post-share post-activity-button post-activity-container">
+                                    <img src="./Reddit Clone_files/share.svg">
+                                    <span>
+                                Share
+                            </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="post-container">
+                        <div class="post">
+                            <div class="post-meta">
+                                <div class="post-user-info">
+                                    <img src="./Reddit Clone_files/avatar-6.jpeg">
+                                    <span class="post-user-name">
+                                        u/deathsowhat
+                                    </span>
+                                </div>
+                                <div class="post-created-at">
+                                    •
+                                    1 day ago
+                                </div>
+                            </div>
+                            <h2 class="post-header">
+                                I found the final boss guys
+                            </h2>
+                            <div class="post-preview">
+                                <img src="./Reddit Clone_files/preview-9.jpg">
+                            </div>
+                            <div class="post-activity">
+                                <div class="post-vote post-activity-container">
+                                    <div class="post-activity-button">
+                                        <img src="./Reddit Clone_files/upvote.svg" class="upvote-default">
+                                        <img src="./Reddit Clone_files/upvote-active.svg" class="upvote-active">
+                                    </div>
+                                    <span class="post-vote-score">
+                                3.6k
+                            </span>
+                                    <div class="post-activity-button">
+                                        <img src="./Reddit Clone_files/downvote.svg" class="downvote-default">
+                                        <img src="./Reddit Clone_files/downvote-active.svg" class="downvote-active">
+                                    </div>
+                                </div>
+                                <div class="post-comment post-activity-button post-activity-container">
+                                    <img src="./Reddit Clone_files/comment.svg">
+                                    <span class="post-comment-amount">
+                                593
+                            </span>
+                                </div>
+                                <div class="post-share post-activity-button post-activity-container">
+                                    <img src="./Reddit Clone_files/share.svg">
+                                    <span>
+                                Share
+                            </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="post-container">
+                        <div class="post">
+                            <div class="post-meta">
+                                <div class="post-user-info">
+                                    <img src="./Reddit Clone_files/avatar-2.png">
+                                    <span class="post-user-name">
+                               u/_Maximum
+                            </span>
+                                </div>
+                                <div class="post-created-at">
+                                    •
+                                    3 days ago
+                                </div>
+                            </div>
+                            <h2 class="post-header">
+                                Click to cancel, now with more gamification
+                            </h2>
+                            <div class="post-preview">
+                                <img src="./Reddit Clone_files/preview-3.gif">
+                            </div>
+                            <div class="post-activity">
+                                <div class="post-vote post-activity-container">
+                                    <div class="post-activity-button">
+                                        <img src="./Reddit Clone_files/upvote.svg" class="upvote-default">
+                                        <img src="./Reddit Clone_files/upvote-active.svg" class="upvote-active">
+                                    </div>
+                                    <span class="post-vote-score">
+                                443
+                            </span>
+                                    <div class="post-activity-button">
+                                        <img src="./Reddit Clone_files/downvote.svg" class="downvote-default">
+                                        <img src="./Reddit Clone_files/downvote-active.svg" class="downvote-active">
+                                    </div>
+                                </div>
+                                <div class="post-comment post-activity-button post-activity-container">
+                                    <img src="./Reddit Clone_files/comment.svg">
+                                    <span class="post-comment-amount">
+                                43
+                            </span>
+                                </div>
+                                <div class="post-share post-activity-button post-activity-container">
+                                    <img src="./Reddit Clone_files/share.svg">
+                                    <span>
+                                Share
+                            </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="post-container">
+                        <div class="post">
+                            <div class="post-meta">
+                                <div class="post-user-info">
+                                    <img src="./Reddit Clone_files/avatar-8.png">
+                                    <span class="post-user-name">
+                                    u/AZXCIV
+                                </span>
+                                </div>
+                                <div class="post-created-at">
+                                    •
+                                    9 mo. ago
+                                </div>
+                            </div>
+                            <h2 class="post-header">
+                                Guys Its Finally Happened to ME! I have....the EYES!
+                            </h2>
+                            <div class="post-preview">
+                                <p>
+                                    Whats up!
+                                </p>
+                                <p>
+                                    Been a software engineer for over 4 years now. And yesterday I finally experienced
+                                    the level of enlightenment we all aspire to.
+                                </p>
+                                <p>
+                                    I got a code review request from a fellow senior engineer, it was about 15 files and
+                                    300 lines. I finsished the review in about 5 minutes, and requested changes.
+                                </p>
+                                <p>
+                                    Fellow engineer says there's no way you finished the review THAT fast. You haven't
+                                    even pulled it down and ran it on your local !
+                                </p>
+                                <p>
+                                    I said "I didnt need to pull it down. And as I noted in the review this is not going
+                                    to work for x,y,z reasons and also these 2 edges cases are uncovered blah blah"
+                                </p>
+                                <p>
+                                    Fellow engineer comes back 20 minutes later, and said "wow how did y..."
+                                </p>
+                            </div>
+                            <div class="post-activity">
+                                <div class="post-vote post-activity-container">
+                                    <div class="post-activity-button">
+                                        <img src="./Reddit Clone_files/upvote.svg" class="upvote-default">
+                                        <img src="./Reddit Clone_files/upvote-active.svg" class="upvote-active">
+                                    </div>
+                                    <span class="post-vote-score">
+                                2.9k
+                            </span>
+                                    <div class="post-activity-button">
+                                        <img src="./Reddit Clone_files/downvote.svg" class="downvote-default">
+                                        <img src="./Reddit Clone_files/downvote-active.svg" class="downvote-active">
+                                    </div>
+                                </div>
+                                <div class="post-comment post-activity-button post-activity-container">
+                                    <img src="./Reddit Clone_files/comment.svg">
+                                    <span class="post-comment-amount">
+                                263
+                            </span>
+                                </div>
+                                <div class="post-share post-activity-button post-activity-container">
+                                    <img src="./Reddit Clone_files/share.svg">
+                                    <span>
+                                Share
+                            </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="post-container">
+                        <div class="post">
+                            <div class="post-meta">
+                                <div class="post-user-info">
+                                    <img src="./Reddit Clone_files/avatar-7.png">
+                                    <span class="post-user-name">
+                               u/FickleSwordfish8689
+                            </span>
+                                </div>
+                                <div class="post-created-at">
+                                    •
+                                    23 days ago
+                                </div>
+                            </div>
+                            <h2 class="post-header">
+                                A lot of people on twitter seem to believe this,but I call it bullshit
+                            </h2>
+                            <div class="post-preview">
+                                <img src="./Reddit Clone_files/preview-8.jpg">
+                            </div>
+                            <div class="post-activity">
+                                <div class="post-vote post-activity-container">
+                                    <div class="post-activity-button">
+                                        <img src="./Reddit Clone_files/upvote.svg" class="upvote-default">
+                                        <img src="./Reddit Clone_files/upvote-active.svg" class="upvote-active">
+                                    </div>
+                                    <span class="post-vote-score">
+                                2.5k
+                            </span>
+                                    <div class="post-activity-button">
+                                        <img src="./Reddit Clone_files/downvote.svg" class="downvote-default">
+                                        <img src="./Reddit Clone_files/downvote-active.svg" class="downvote-active">
+                                    </div>
+                                </div>
+                                <div class="post-comment post-activity-button post-activity-container">
+                                    <img src="./Reddit Clone_files/comment.svg">
+                                    <span class="post-comment-amount">
+                                844
+                            </span>
+                                </div>
+                                <div class="post-share post-activity-button post-activity-container">
+                                    <img src="./Reddit Clone_files/share.svg">
+                                    <span>
+                                Share
+                            </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="right-sidebar">
+                <div class="sidebar-community-info">
+                    <div class="sidebar-community-description">
+                        <h2 class="sidebar-community-description-title">
+                            webdev: reddit for web developers
+                        </h2>
+                        <div class="sidebar-community-description-detailed">
+                            A community dedicated to all things web development: both front-end and back-end. For more
+                            design-related questions, try /r/web_design.
+                        </div>
+                    </div>
+                    <div class="sidebar-community-stats">
+                        <div class="member-overall-stats">
+                            <div class="amount">2.7M</div>
+                            <div class="label">Members</div>
+                        </div>
+                        <div class="member-online-stats">
+                            <div class="amount">323</div>
+                            <div class="label">
+                                <div class="online-dot"></div>
+                                Online
+                            </div>
+                        </div>
+                        <div class="member-overall-stats">
+                            <div class="amount">Top 1%</div>
+                            <div class="label">Rank by size</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sidebar-image">
+                    <div class="sidebar-image-header">
+                        Sidebar Image
+                    </div>
+                    <img src="./Reddit Clone_files/sidebar-image-1.jpg">
+                </div>
+                <div class="filter-by-flair">
+                    <div class="filter-by-flair-header">
+                        Filter feed by flair
+                    </div>
+                    <ul class="flair-list">
+                        <li>
+                            <button class="flair-button flair-button--fan-made">
+                                <i class="fa-solid fa-image"></i>
+                                fan made
+                            </button>
+                        </li>
+                        <li>
+                            <button class="flair-button  flair-button--funny">
+                                <i class="fa-regular fa-face-grin"></i>
+                                funny
+                            </button>
+                        </li>
+                        <li>
+                            <button class="flair-button  flair-button--discussion">
+                                <i class="fa-regular fa-comments"></i>
+                                discussion
+                            </button>
+                        </li>
+                        <li>
+                            <button class="flair-button  flair-button--spoiler">
+                                <i class="fa-solid fa-circle-exclamation"></i>
+                                spoiler
+                            </button>
+                        </li>
+                        <li>
+                            <button class="flair-button  flair-button--news">
+                                <i class="fa-solid fa-newspaper"></i>
+                                news
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body></html>

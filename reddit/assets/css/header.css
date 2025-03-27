@@ -1,0 +1,117 @@
+
+.main-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 0 16px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    background-color: white;
+    z-index: 100;
+}
+
+.reddit-logo {
+    width: 115px;
+    display: flex;
+    /*align-items: flex-end;*/
+    /*gap: 8px;*/
+}
+
+.reddit-logo-word {
+    height: 22px;
+}
+
+.header-actions-container {
+    display: flex;
+    height: 40px;
+    align-items: center;
+}
+
+.header-action-item {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.header-action-item:hover {
+    background-color: rgb(219, 228, 233);
+    cursor: pointer;
+}
+
+.header-action-item:active {
+    background-color: #C9D7DE;
+}
+
+.header-action-item--avatar {
+    position: relative;
+}
+
+.avatar-img {
+    border-radius: 50%;
+    width: 32px;
+}
+
+.online-indicator {
+    position: absolute;
+    bottom: 3px;
+    right: 3px;
+    width: 6px;
+    height: 6px;
+    background-color: rgb(1, 168, 22);
+    border-radius: 50%;
+    border: 1px solid white;
+}
+
+.header-action-item--inbox {
+    position: relative;
+}
+
+.notifications-indicator {
+    position: absolute;
+    top: 4px;
+    right: 0;
+
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    font-size: 10px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgb(255, 69, 0);
+}
+
+.header-action-item .tooltip {
+    display: none;
+    position: absolute;
+    bottom: -37px;
+    right: 50%;
+    transform: translateX(50%);
+    padding: 5px 15px;
+    background-color: #444444;
+    color: white;
+    border-radius: 3px;
+    width: max-content;
+    z-index: 10;
+}
+
+.header-action-item .tooltip--right {
+    right: 0;
+    transform: none;
+    /*transform: translateX(-100%);*/
+}
+
+.header-action-item:hover .tooltip {
+    display: block;
+}

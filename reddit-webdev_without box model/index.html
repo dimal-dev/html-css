@@ -1,0 +1,962 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reddit Clone</title>
+
+    <link rel="stylesheet" href="css/page.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/search.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main-posts.css">
+    <link rel="stylesheet" href="css/main-sidebar.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+          integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+</head>
+<body>
+    <div class="header">
+        <a href="">
+            <img src="images/reddit-logo.png" class="reddit-logo">
+        </a>
+        <div class="search">
+            <img src="images/search.svg" class="search-image">
+            <input type="text" class="search-input" placeholder="Search Reddit">
+            <div class="search-results">
+                <div class="search-results-scrollable">
+                    <ul class="recent-searches">
+                        <li>
+                            <div class="community">
+                                <img src="images/community/community-icon-1.png">
+                            </div>
+                            <div class="recent-search-value">
+                                r/webdev
+                            </div>
+                            <button class="remove">
+                                <img src="images/icons/close.svg">
+                            </button>
+                        </li>
+                        <li>
+                            <div class="community">
+                                <img src="images/community/community-icon-2.png">
+                            </div>
+                            <div class="recent-search-value">
+                                r/react
+                            </div>
+                            <button class="remove">
+                                <img src="images/icons/close.svg">
+                            </button>
+                        </li>
+                        <li>
+                            <div class="community">
+                                <img src="images/community/community-icon-3.png">
+                            </div>
+                            <div class="recent-search-value">
+                                r/JS
+                            </div>
+                            <button class="remove">
+                                <img src="images/icons/close.svg">
+                            </button>
+                        </li>
+                        <li>
+                            <div class="community">
+                                <img src="images/community/community-icon-4.png">
+                            </div>
+                            <div class="recent-search-value">
+                                r/python
+                            </div>
+                            <button class="remove">
+                                <img src="images/icons/close.svg">
+                            </button>
+                        </li>
+                        <li>
+                            <div class="community">
+                                <img src="images/community/community-icon-5.png">
+                            </div>
+                            <div class="recent-search-value">
+                                r/css
+                            </div>
+                            <button class="remove">
+                                <img src="images/icons/close.svg">
+                            </button>
+                        </li>
+                    </ul>
+                    <div class="trending-today">
+                        <div class="trending-today-header">
+                            <img src="images/icons/trending.svg" class="trending-today-header-icon">
+                            <span class="trending-today-title">
+                                Trending today
+                            </span>
+                        </div>
+                        <ul class="treding-today-items">
+                            <li class="trending-today-item">
+                                <div class="trending-today-item-info">
+                                    <div class="trending-today-item-title">
+                                        Yankees force WS Game 5
+                                    </div>
+                                    <div class="trending-today-item-description">
+                                        FINAL: The New York Yankees take Game 4 of the World Series
+                                    </div>
+                                    <div class="trending-today-source">
+                                        <img src="images/community/community-icon-6.png" class="trending-today-source-image" >
+                                        <div class="trending-today-source-name">
+                                            r/mlb and more
+                                        </div>
+                                    </div>
+                                </div>
+                                <img src="images/trending/preview-1.jpg" class="trending-today-item-preview">
+                            </li>
+                            <li class="trending-today-item">
+                                <div class="trending-today-item-info">
+                                    <div class="trending-today-item-title">
+                                        Stanley Cup Final
+                                    </div>
+                                    <div class="trending-today-item-description">
+                                        Playoff Game Thread: Florida Panthers (3-2) at Edmonton Oilers (2-3) - Game 6 - 21 Jun 2024 - 06:00PM MDT
+                                    </div>
+                                    <div class="trending-today-source">
+                                        <img src="images/community/community-icon-7.png" class="trending-today-source-image" >
+                                        <div class="trending-today-source-name">
+                                            r/hockey and more
+                                        </div>
+                                    </div>
+                                </div>
+                                <img src="images/trending/preview-2.jpg" class="trending-today-item-preview">
+                            </li>
+                            <li class="trending-today-item">
+                                <div class="trending-today-item-info">
+                                    <div class="trending-today-item-title">
+                                        Concord developer shut down
+                                    </div>
+                                    <div class="trending-today-item-description">
+                                        PlayStation has closed Concord developer Firewalk | VGC
+                                    </div>
+                                    <div class="trending-today-source">
+                                        <img src="images/community/community-icon-8.png" class="trending-today-source-image" >
+                                        <div class="trending-today-source-name">
+                                            r/gaming and more
+                                        </div>
+                                    </div>
+                                </div>
+                                <img src="images/trending/preview-3.jpg" class="trending-today-item-preview">
+                            </li>
+                            <li class="trending-today-item">
+                                <div class="trending-today-item-info">
+                                    <div class="trending-today-item-title">
+                                        Tekashi 6ix9ine arrested
+                                    </div>
+                                    <div class="trending-today-item-description">
+                                        Rapper Tekashi 6ix9ine arrested after he's accused of violating the conditions of his release
+                                    </div>
+                                    <div class="trending-today-source">
+                                        <img src="images/community/community-icon-9.png" class="trending-today-source-image" >
+                                        <div class="trending-today-source-name">
+                                            r/news and more
+                                        </div>
+                                    </div>
+                                </div>
+                                <img src="images/trending/preview-4.jpg" class="trending-today-item-preview">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <ul class="header-actions">
+            <li class="header-action">
+                <button>
+                    <img src="images/icons/advertise.svg">
+                    <div class="header-action-tooltip">
+                        Advertise on Reddit
+                    </div>
+                </button>
+            </li>
+            <li class="header-action">
+                <button>
+                    <img src="images/icons/chat.svg">
+                    <div class="header-action-tooltip">
+                        Open chat
+                    </div>
+                </button>
+            </li>
+            <li class="header-action">
+                <button>
+                    <img src="images/icons/create-post.svg">
+                    <div class="header-action-tooltip">
+                        Create post
+                    </div>
+                </button>
+            </li>
+            <li class="header-action">
+                <button class="inbox-button">
+                    <img src="images/icons/open-inbox.svg">
+                    <div class="notification-counter">1</div>
+                    <div class="header-action-tooltip">
+                        Open inbox
+                    </div>
+                </button>
+            </li>
+            <li class="header-action">
+                <input type="checkbox" class="profile-menu-visibility" id="profile-menu-visibility-checkbox">
+                <button class="profile-menu-button">
+                    <label for="profile-menu-visibility-checkbox" class="header-action-avatar-label">
+                        <img src="images/icons/avatar.png" class="header-action-avatar">
+                    </label>
+                    <div class="online-indicator"></div>
+                    <div class="header-action-tooltip">
+                        Open profile menu
+                    </div>
+                </button>
+                <ul class="profile-menu">
+                    <li class="profile-menu-item">
+                        <div class="profile-menu-item-left">
+                            <img src="images/icons/avatar.png" class="profile-menu-item-icon profile-menu-item-icon-avatar">
+                            <div class="online-indicator online-indicator-profile-menu"></div>
+                        </div>
+                        <div class="profile-menu-item-right">
+                            <div class="profile-menu-item-title">
+                                View Profile
+                            </div>
+                            <div class="profile-menu-item-extra">
+                                u/Curious_Volume3530
+                            </div>
+                        </div>
+                    </li>
+                    <li class="profile-menu-item">
+                        <div class="profile-menu-item-left">
+                            <img src="images/icons/edit-avatar.svg" class="profile-menu-item-icon">
+                        </div>
+                        <div class="profile-menu-item-right">
+                            <div class="profile-menu-item-title">
+                                Edit Avatar
+                            </div>
+                        </div>
+                    </li>
+                    <li class="profile-menu-item">
+                        <div class="profile-menu-item-left">
+                            <img src="images/icons/achievements.svg" class="profile-menu-item-icon">
+                        </div>
+                        <div class="profile-menu-item-right">
+                            <div class="profile-menu-item-title">
+                                Achievements
+                            </div>
+                            <div class="profile-menu-item-extra">
+                                3 unlocked
+                            </div>
+                        </div>
+                    </li>
+                    <li class="profile-menu-item">
+                        <div class="profile-menu-item-left">
+                            <img src="images/icons/contributor-program.svg" class="profile-menu-item-icon">
+                        </div>
+                        <div class="profile-menu-item-right">
+                            <div class="profile-menu-item-title">
+                                Contributor Program
+                            </div>
+                            <div class="profile-menu-item-extra profile-menu-item-gold">
+                                <img src="images/icons/gold.svg">
+                                12 gold earned
+                            </div>
+                        </div>
+                    </li>
+                    <li class="profile-menu-item">
+                        <div class="profile-menu-item-left">
+                            <img src="images/icons/dark-mode.svg" class="profile-menu-item-icon">
+                        </div>
+                        <div class="profile-menu-item-right">
+                            <div class="profile-menu-item-title profile-menu-item-dark-mode">
+                                Dark Mode
+                                <input type="checkbox">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="profile-menu-item">
+                        <div class="profile-menu-item-left">
+                            <img src="images/icons/logout.svg" class="profile-menu-item-icon">
+                        </div>
+                        <div class="profile-menu-item-right">
+                            <div class="profile-menu-item-title">
+                                Logout
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <ul class="sidebar">
+        <li>
+            <ul class="sidebar-section">
+                <li>
+                    <a href="" class="sidebar-link">
+                        <img src="images/icons/home.svg">
+                        <div class="sidebar-section-item-details">
+                            Home
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="sidebar-link">
+                        <img src="images/icons/popular.svg">
+                        <div class="sidebar-section-item-details">
+                            Popular
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="sidebar-link">
+                        <img src="images/icons/all.svg">
+                        <div class="sidebar-section-item-details">
+                            All
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </li>
+        
+        <li>
+            <input type="checkbox" id="sidebar-collapse-checkbox-custom-feeds" class="sidebar-collapse-checkbox">
+            <label for="sidebar-collapse-checkbox-custom-feeds" class="sidebar-collapse-label">
+                Custom feeds
+                <img src="images/icons/down.svg">
+            </label>
+            <ul class="sidebar-section">
+                <li>
+                    <a href="" class="sidebar-link">
+                        <img src="images/icons/plus.svg">
+                        <div class="sidebar-section-item-details">
+                            Create a custom feed
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </li>
+
+        <li>
+            <input type="checkbox" id="sidebar-collapse-checkbox-recent" class="sidebar-collapse-checkbox">
+            <label for="sidebar-collapse-checkbox-recent" class="sidebar-collapse-label">
+                Recent
+                <img src="images/icons/down.svg">
+            </label>
+            <ul class="sidebar-section">
+                <li>
+                    <a href="" class="sidebar-link">
+                        <img src="images/icons/community-icon-1.png" class="sidebar-link-icon-round">
+                        <div class="sidebar-section-item-details">
+                            r/webdev
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="sidebar-link">
+                        <img src="images/icons/community-icon-3.png" class="sidebar-link-icon-round">
+                        <div class="sidebar-section-item-details">
+                            r/react
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="sidebar-link">
+                        <img src="images/icons/community-icon-5.png" class="sidebar-link-icon-round">
+                        <div class="sidebar-section-item-details">
+                            r/python
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="sidebar-link">
+                        <img src="images/icons/community-icon-2.png" class="sidebar-link-icon-round">
+                        <div class="sidebar-section-item-details">
+                            r/ChatGPT
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="sidebar-link">
+                        <img src="images/icons/community-icon-4.png" class="sidebar-link-icon-round">
+                        <div class="sidebar-section-item-details">
+                            r/JS
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </li>
+
+        <li>
+            <input type="checkbox" id="sidebar-collapse-checkbox-communities" class="sidebar-collapse-checkbox">
+            <label for="sidebar-collapse-checkbox-communities" class="sidebar-collapse-label">
+                Communities
+                <img src="images/icons/down.svg">
+            </label>
+            <ul class="sidebar-section">
+                <li>
+                    <a href="" class="sidebar-link">
+                        <img src="images/icons/plus.svg">
+                        <div class="sidebar-section-item-details">
+                            Create a community
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="sidebar-link">
+                        <img src="images/icons/community-icon-6.png" class="sidebar-link-icon-round">
+                        <div class="sidebar-section-item-details">
+                            r/css
+                            <button class="make-favourite">
+                                <img src="images/icons/star.svg">
+                            </button>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="sidebar-link">
+                        <img src="images/icons/community-icon-7.png" class="sidebar-link-icon-round">
+                        <div class="sidebar-section-item-details">
+                            r/django
+                            <button class="make-favourite">
+                                <img src="images/icons/star.svg">
+                            </button>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="sidebar-link">
+                        <img src="images/icons/community-icon-8.png" class="sidebar-link-icon-round">
+                        <div class="sidebar-section-item-details">
+                            r/node
+                            <button class="make-favourite">
+                                <img src="images/icons/star.svg">
+                            </button>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </li>
+
+        <li>
+            <input type="checkbox" id="sidebar-collapse-checkbox-resources" class="sidebar-collapse-checkbox">
+            <label for="sidebar-collapse-checkbox-resources" class="sidebar-collapse-label">
+                Resources
+                <img src="images/icons/down.svg">
+            </label>
+            <ul class="sidebar-section">
+                <li>
+                    <a href="" class="sidebar-link">
+                        <img src="images/icons/about-reddit.svg">
+                        <div class="sidebar-section-item-details">
+                            About Reddit
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="sidebar-link">
+                        <img src="images/icons/advertise-2.svg">
+                        <div class="sidebar-section-item-details">
+                            Advertise
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="sidebar-link">
+                        <img src="images/icons/help.svg">
+                        <div class="sidebar-section-item-details">
+                            Help
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="sidebar-link">
+                        <img src="images/icons/blog.svg">
+                        <div class="sidebar-section-item-details">
+                            Blog
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="sidebar-link">
+                        <img src="images/icons/careers.svg">
+                        <div class="sidebar-section-item-details">
+                            Careers
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="sidebar-link">
+                        <img src="images/icons/press.svg">
+                        <div class="sidebar-section-item-details">
+                            Press
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <ul class="sidebar-section">
+                <li>
+                    <a href="" class="sidebar-link">
+                        <img src="images/icons/communities.svg">
+                        <div class="sidebar-section-item-details">
+                            Communities
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="sidebar-link">
+                        <img src="images/icons/best-of-reddit.svg">
+                        <div class="sidebar-section-item-details">
+                            Best of Reddit
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="sidebar-link">
+                        <img src="images/icons/topics.svg">
+                        <div class="sidebar-section-item-details">
+                            Topics
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <ul class="sidebar-section">
+                <li>
+                    <a href="" class="sidebar-link">
+                        <img src="images/icons/content-policy.svg">
+                        <div class="sidebar-section-item-details">
+                            Content Policy
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="sidebar-link">
+                        <img src="images/icons/privacy-policy.svg">
+                        <div class="sidebar-section-item-details">
+                            Privacy Policy
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="sidebar-link">
+                        <img src="images/icons/user-agreement.svg">
+                        <div class="sidebar-section-item-details">
+                            User Agreement
+                        </div>
+                    </a>
+                </li>
+            </ul>
+
+            <a href="" class="copyright-link">
+                Reddit Clone &copy; 2024
+            </a>
+        </li>
+    </ul>
+    <div class="main">
+        <div class="main-head">
+            <img src="images/community/community-banner.png" class="main-head-banner">
+            <div class="main-head-info">
+                <div class="main-head-community">
+                    <img src="images/community/community-avatar.jpg" class="community-avatar">
+                    <h1>
+                        r/webdev
+                    </h1>
+                </div>
+                <div class="community-actions">
+                    <button class="community-action-create-post">
+                        <img src="images/icons/plus.svg">
+                        Create a post
+                    </button>
+                    <button class="community-action-join">
+                        Join
+                    </button>
+                    <div class="community-action-more-container">
+                        <input type="checkbox" id="community-action-more-checkbox">
+                        <button class="community-action-more">
+                            <label for="community-action-more-checkbox">
+                                <img src="images/icons/three-dots.svg">
+                            </label>
+                        </button>
+                        <ul class="more-menu">
+                            <li class="more-menu-item">
+                                Add to custom feed
+                            </li>
+                            <li class="more-menu-item">
+                                Add to favourites
+                            </li>
+                            <li class="more-menu-item">Mute r/webdev</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-body">
+            <div class="main-posts">
+                <div class="post-container">
+                    <div class="post">
+                        <div class="post-meta">
+                            <div class="post-user-info">
+                                <img src="images/icons/avatar.png">
+                                <span class="post-user-name">
+                            u/QuinnHannan1
+                        </span>
+                            </div>
+                            <div class="post-created-at">
+                                &bull;
+                                5 days ago
+                            </div>
+                        </div>
+                        <h2 class="post-header">
+                            I fired a great dev and wasted $50,000
+                        </h2>
+                        <div class="post-preview">
+                            <p>
+                                I almost killed my startup before it even launched.
+                            </p>
+                            <p>
+                                I started building my tech startup 18 months ago. As a non technical founder, I
+                                hired a web dev from Pakistan to help build my idea. He was doing good work but I
+                                got impatient and wanted to move faster.
+                            </p>
+                            <p>
+                                I made a HUGE mistake. I put my reliable developer on pause and hired an agency that
+                                promised better results. They seemed professional at first but I soon realized I was
+                                just one of many clients. My project wasn't a priority for them.
+                            </p>
+                            <p>
+                                After wasting so much time and money, I went back to my original Pakistani
+                                developer. He thankfully accepted the job again and is now doing amazing work, and
+                                we're finally...
+                            </p>
+                        </div>
+                        <div class="post-activity">
+                            <div class="post-vote post-activity-container">
+                                <button class="post-activity-button">
+                                    <img src="images/icons/upvote.svg" class="upvote-default">
+                                    <img src="images/icons/upvote-active.svg" class="upvote-active">
+                                </button>
+                                <span class="post-vote-score">
+                                    720
+                                </span>
+                                <button class="post-activity-button">
+                                    <img src="images/icons/downvote.svg" class="downvote-default">
+                                    <img src="images/icons/downvote-active.svg" class="downvote-active">
+                                </button>
+                            </div>
+                            <button class="post-comment post-activity-button post-activity-container">
+                                <img src="images/icons/comment.svg">
+                                <span class="post-comment-amount">
+                                    99
+                                </span>
+                            </button>
+                            <button class="post-share post-activity-button post-activity-container">
+                                <img src="images/icons/share.svg">
+                                <span>
+                                    Share
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="post-container">
+                    <div class="post">
+                        <div class="post-meta">
+                            <div class="post-user-info">
+                                <img src="images/community/avatar-6.jpeg">
+                                <span class="post-user-name">
+                                    u/deathsowhat
+                                </span>
+                            </div>
+                            <div class="post-created-at">
+                                &bull;
+                                1 day ago
+                            </div>
+                        </div>
+                        <h2 class="post-header">
+                            I found the final boss guys
+                        </h2>
+                        <div class="post-preview">
+                            <img src="images/preview-9.jpg">
+                        </div>
+                        <div class="post-activity">
+                            <div class="post-vote post-activity-container">
+                                <div class="post-activity-button">
+                                    <img src="images/icons/upvote.svg" class="upvote-default">
+                                    <img src="images/icons/upvote-active.svg" class="upvote-active">
+                                </div>
+                                <span class="post-vote-score">
+                                    3.6k
+                                </span>
+                                <div class="post-activity-button">
+                                    <img src="images/icons/downvote.svg" class="downvote-default">
+                                    <img src="images/icons/downvote-active.svg" class="downvote-active">
+                                </div>
+                            </div>
+                            <div class="post-comment post-activity-button post-activity-container">
+                                <img src="images/icons/comment.svg">
+                                <span class="post-comment-amount">
+                                    593
+                                </span>
+                            </div>
+                            <div class="post-share post-activity-button post-activity-container">
+                                <img src="images/icons/share.svg">
+                                <span>
+                                    Share
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="post-container">
+                    <div class="post">
+                        <div class="post-meta">
+                            <div class="post-user-info">
+                                <img src="images/community/avatar-2.png">
+                                <span class="post-user-name">
+                                   u/_Maximum
+                                </span>
+                            </div>
+                            <div class="post-created-at">
+                                &bull;
+                                3 days ago
+                            </div>
+                        </div>
+                        <h2 class="post-header">
+                            Click to cancel, now with more gamification
+                        </h2>
+                        <div class="post-preview">
+                            <img src="images/preview-3.gif">
+                        </div>
+                        <div class="post-activity">
+                            <div class="post-vote post-activity-container">
+                                <div class="post-activity-button">
+                                    <img src="images/icons/upvote.svg" class="upvote-default">
+                                    <img src="images/icons/upvote-active.svg" class="upvote-active">
+                                </div>
+                                <span class="post-vote-score">
+                                    443
+                                </span>
+                                <div class="post-activity-button">
+                                    <img src="images/icons/downvote.svg" class="downvote-default">
+                                    <img src="images/icons/downvote-active.svg" class="downvote-active">
+                                </div>
+                            </div>
+                            <div class="post-comment post-activity-button post-activity-container">
+                                <img src="images/icons/comment.svg">
+                                <span class="post-comment-amount">
+                                    43
+                                </span>
+                            </div>
+                            <div class="post-share post-activity-button post-activity-container">
+                                <img src="images/icons/share.svg">
+                                <span>
+                                    Share
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="post-container">
+                    <div class="post">
+                        <div class="post-meta">
+                            <div class="post-user-info">
+                                <img src="images/community/avatar-8.png">
+                                <span class="post-user-name">
+                                    u/AZXCIV
+                                </span>
+                            </div>
+                            <div class="post-created-at">
+                                &bull;
+                                9 mo. ago
+                            </div>
+                        </div>
+                        <h2 class="post-header">
+                            Guys Its Finally Happened to ME! I have....the EYES!
+                        </h2>
+                        <div class="post-preview">
+                            <p>
+                                Whats up!
+                            </p>
+                            <p>
+                                Been a software engineer for over 4 years now. And yesterday I finally experienced
+                                the level of enlightenment we all aspire to.
+                            </p>
+                            <p>
+                                I got a code review request from a fellow senior engineer, it was about 15 files and
+                                300 lines. I finsished the review in about 5 minutes, and requested changes.
+                            </p>
+                            <p>
+                                Fellow engineer says there's no way you finished the review THAT fast. You haven't
+                                even pulled it down and ran it on your local !
+                            </p>
+                            <p>
+                                I said "I didnt need to pull it down. And as I noted in the review this is not going
+                                to work for x,y,z reasons and also these 2 edges cases are uncovered blah blah"
+                            </p>
+                            <p>
+                                Fellow engineer comes back 20 minutes later, and said "wow how did y..."
+                            </p>
+                        </div>
+                        <div class="post-activity">
+                            <div class="post-vote post-activity-container">
+                                <div class="post-activity-button">
+                                    <img src="images/icons/upvote.svg" class="upvote-default">
+                                    <img src="images/icons/upvote-active.svg" class="upvote-active">
+                                </div>
+                                <span class="post-vote-score">
+                                    2.9k
+                                </span>
+                                <div class="post-activity-button">
+                                    <img src="images/icons/downvote.svg" class="downvote-default">
+                                    <img src="images/icons/downvote-active.svg" class="downvote-active">
+                                </div>
+                            </div>
+                            <div class="post-comment post-activity-button post-activity-container">
+                                <img src="images/icons/comment.svg">
+                                <span class="post-comment-amount">
+                                    263
+                                </span>
+                            </div>
+                            <div class="post-share post-activity-button post-activity-container">
+                                <img src="images/icons/share.svg">
+                                <span>
+                                    Share
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="post-container">
+                    <div class="post">
+                        <div class="post-meta">
+                            <div class="post-user-info">
+                                <img src="images/community/avatar-7.png">
+                                <span class="post-user-name">
+                                   u/FickleSwordfish8689
+                                </span>
+                            </div>
+                            <div class="post-created-at">
+                                &bull;
+                                23 days ago
+                            </div>
+                        </div>
+                        <h2 class="post-header">
+                            A lot of people on twitter seem to believe this,but I call it bullshit
+                        </h2>
+                        <div class="post-preview">
+                            <img src="images/preview-8.jpg">
+                        </div>
+                        <div class="post-activity">
+                            <div class="post-vote post-activity-container">
+                                <div class="post-activity-button">
+                                    <img src="images/icons/upvote.svg" class="upvote-default">
+                                    <img src="images/icons/upvote-active.svg" class="upvote-active">
+                                </div>
+                                <span class="post-vote-score">
+                                    2.5k
+                                </span>
+                                <div class="post-activity-button">
+                                    <img src="images/icons/downvote.svg" class="downvote-default">
+                                    <img src="images/icons/downvote-active.svg" class="downvote-active">
+                                </div>
+                            </div>
+                            <div class="post-comment post-activity-button post-activity-container">
+                                <img src="images/icons/comment.svg">
+                                <span class="post-comment-amount">
+                                    844
+                                </span>
+                            </div>
+                            <div class="post-share post-activity-button post-activity-container">
+                                <img src="images/icons/share.svg">
+                                <span>
+                                    Share
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>                
+            </div>
+            <div class="main-sidebar">
+                <div class="main-sidebar-community-info">
+                    <div class="main-sidebar-description">
+                        <h2 class="main-sidebar-description-title">
+                            webdev: reddit for web developers
+                        </h2>
+                        <div class="main-sidebar-description-detailed">
+                            A community dedicated to all things web development: both front-end and back-end. For more
+                            design-related questions, try /r/web_design.
+                        </div>
+                    </div>
+                    <div class="main-sidebar-community-stats">
+                        <div class="main-sidebar-stats-overall">
+                            <div class="main-sidebar-stats-amount">2.7M</div>
+                            <div class="main-sidebar-stats-label">Members</div>
+                        </div>
+                        <div class="main-sidebar-stats-overall">
+                            <div class="main-sidebar-stats-amount">323</div>
+                            <div class="main-sidebar-stats-label">
+                                <div class="main-sidebar-online-dot"></div>
+                                Online
+                            </div>
+                        </div>
+                        <div class="main-sidebar-stats-overall">
+                            <div class="main-sidebar-stats-amount">Top 1%</div>
+                            <div class="main-sidebar-stats-label">Rank by size</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sidebar-image">
+                    <div class="sidebar-image-header">
+                        Sidebar Image
+                    </div>
+                    <img src="images/sidebar-image-1.jpg">
+                </div>
+                <div class="filter-by-flair">
+                    <div class="filter-by-flair-header">
+                        Filter feed by flair
+                    </div>
+                    <ul class="flair-list">
+                        <li>
+                            <button class="flair-button flair-button-fan-made">
+                                <i class="fa-solid fa-image"></i>
+                                fan made
+                            </button>
+                        </li>
+                        <li>
+                            <button class="flair-button  flair-button-funny">
+                                <i class="fa-regular fa-face-grin"></i>
+                                funny
+                            </button>
+                        </li>
+                        <li>
+                            <button class="flair-button  flair-button-discussion">
+                                <i class="fa-regular fa-comments"></i>
+                                discussion
+                            </button>
+                        </li>
+                        <li>
+                            <button class="flair-button  flair-button-spoiler">
+                                <i class="fa-solid fa-circle-exclamation"></i>
+                                spoiler
+                            </button>
+                        </li>
+                        <li>
+                            <button class="flair-button  flair-button-news">
+                                <i class="fa-solid fa-newspaper"></i>
+                                news
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

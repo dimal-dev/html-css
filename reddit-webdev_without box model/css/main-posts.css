@@ -1,0 +1,144 @@
+.post {
+    border-radius: 15px;
+
+}
+
+.post-container {
+
+
+
+}
+
+.post-container:last-child {
+
+
+}
+
+.post-container:first-child {
+
+}
+
+.post:hover {
+    cursor: pointer;
+    background-color: rgb(239, 239, 239);
+}
+
+.post-meta {
+    display: flex;
+    gap: 8px;
+}
+
+.post-user-info {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    color: rgb(42, 60, 66);
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.post-user-info img {
+    width: 24px;
+    height: 24px;
+    vertical-align: top;
+    border-radius: 50%;
+}
+
+.post-created-at {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    color: rgb(87, 111, 118);
+}
+
+.post-header {
+
+    color: rgb(6, 24, 20);
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.post-preview {
+
+
+    color: rgb(23, 59, 53);
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.post-preview img {
+    width: 100%;
+    border-radius: 18px;
+}
+
+.post-activity {
+    display: flex;
+    gap: 8px;
+    color: black;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.post-activity-container {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background-color: rgb(232, 232, 232);
+    border-radius: 20px;
+
+}
+
+.post-activity-container img {
+    width: 16px;
+    height: 16px;
+}
+
+.post-activity-button {
+    display: flex;
+    align-items: center;
+}
+
+.post-activity-button:hover {
+    background-color: rgb(225, 225, 225);
+    cursor: pointer;
+}
+
+.post-activity-button:active, .post-vote .post-activity-button:hover {
+    background-color: rgba(186, 186, 186);
+}
+
+.post-vote {
+
+}
+
+.post-vote .post-activity-button {
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: transparent;
+}
+
+.post-vote.post-activity-container {
+    gap: 1px;
+}
+
+.post-vote .post-activity-button .upvote-active,
+.post-vote .post-activity-button .downvote-active {
+    display: none;
+}
+
+.post-vote .post-activity-button:active .upvote-active,
+.post-vote .post-activity-button:active .downvote-active {
+    display: inline-block;
+}
+
+.post-vote .post-activity-button:active .upvote-default,
+.post-vote .post-activity-button:active .downvote-default {
+    display: none;
+}
+
+.main-posts button {
+
+}

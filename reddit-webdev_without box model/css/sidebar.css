@@ -1,0 +1,145 @@
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 57px;
+    list-style: none;
+
+
+    background-color: white;
+    width: 220px;
+
+
+    height: calc(100vh - 57px);
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: transparent  transparent;
+}
+
+.sidebar:hover {
+    scrollbar-color: auto;
+}
+
+.sidebar > li {
+
+
+}
+
+.sidebar > li:last-child {
+
+}
+
+
+.sidebar-section {
+    list-style: none;
+
+
+}
+
+.sidebar-link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    color: rgb(33, 39, 42);
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.sidebar-link:hover {
+    background-color: rgb(246, 248, 249);
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.sidebar-link:active {
+    background-color: rgba(0, 0, 0, 0.16);
+}
+
+.sidebar-link > img {
+
+}
+
+.sidebar-collapse-checkbox {
+    display: none;
+}
+
+.sidebar-collapse-checkbox:checked ~ .sidebar-section {
+    display: none;
+}
+
+.sidebar-collapse-label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-size: 13px;
+    text-transform: uppercase;
+    color: rgb(87, 111, 118);
+}
+
+.sidebar-collapse-label:hover {
+    background-color: rgb(246, 248, 249);
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.sidebar-collapse-label:active {
+    background-color: rgba(0, 0, 0, 0.16);
+}
+
+.sidebar-collapse-label > img {
+    transform: rotateZ(180deg);
+    transition: transform 0.25s;
+}
+
+.sidebar-collapse-checkbox:checked ~ .sidebar-collapse-label > img {
+    transform: rotateZ(0);
+}
+
+.sidebar-link-icon-round {
+    width: 32px;
+    border-radius: 50%;
+}
+
+.sidebar-link > .sidebar-link-icon-round {
+
+}
+
+.sidebar-section-item-details {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sidebar-section-item-details .make-favourite {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: transparent;
+
+}
+
+.sidebar-section-item-details .make-favourite:hover {
+    cursor: pointer;
+    background-color: rgb(219, 228, 233);
+}
+
+.sidebar-section-item-details .make-favourite:active {
+    background-color: rgba(0, 0, 0, 0.16);
+}
+
+.copyright-link {
+    display: block;
+    text-decoration: none;
+    color: rgb(67, 67, 67);
+    font-size: 10px;
+
+}
+
+.copyright-link:hover {
+    text-decoration: underline;
+}

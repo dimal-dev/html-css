@@ -1,0 +1,236 @@
+
+.opened-search {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-top: 40px;
+    z-index: -1;
+
+    box-shadow: 0 0 #0000, 0 0 #0000, 0 0 #0000, 0 0 #0000, 0 0.0625rem 0.25rem 0 #00000026,0 0.25rem 0.25rem 0 #00000026;
+    border-radius: 20px;
+    background-color: white;
+    overflow: hidden;
+}
+
+.opened-search-scrollable {
+    max-height: calc(100vh - 56px - 12px);
+    overflow-x: auto;
+}
+
+.opened-search-content-divider {
+    margin-top: 8px;
+    border-top: 1px solid rgba(0, 0, 0, .1);
+}
+
+.search-input:focus~.opened-search,
+.opened-search:hover,
+.opened-search:active {
+    display: block;
+}
+
+.search-input {
+    flex-grow: 1;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: Roboto, sans-serif;
+    color: #181C1F;
+}
+
+.search-icon-container {
+    display: flex;
+    align-items: center;
+}
+
+.resent-searches {
+    /*display: none;*/
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.resent-searches-item {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 4px 24px;
+    min-height: 32px;
+}
+
+.resent-searches-item:hover {
+    background-color: #F6F8F9;
+    cursor: pointer;
+}
+
+.resent-searches-item:active {
+    background-color: rgba(0, 0, 0, 0.16);
+    cursor: pointer;
+}
+
+.resent-search-logo-container {
+    width: 16px;
+    height: 16px;
+    border-radius: 100%;
+    overflow: hidden;
+}
+.resent-search-logo-container img {
+    vertical-align: top;
+}
+
+.resent-search-title {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333D42;
+}
+
+
+.search-container-l1 {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 8px;
+    z-index: -1;
+}
+
+.search-container-l2 {
+    position: relative;
+    display: flex;
+    padding: 10px 16px;
+
+    width: 560px;
+    margin: 0 auto;
+
+    border-radius: 20px;
+
+    align-items: center;
+    gap: 10px;
+    box-sizing: border-box;
+
+    /*z-index: 2;*/
+}
+
+.search-container-l2:hover {
+    background-color: rgb(219, 228, 233);
+}
+
+
+.resent-search-close-icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+
+.resent-search-close-icon-container:hover {
+    background-color: rgb(219, 228, 233);
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.resent-search-close-icon-container:active {
+    background-color: rgba(0, 0, 0, 0.16);
+}
+
+.trending-today-header {
+    display: flex;
+    margin: 12px 0 0 16px;
+    gap: 4px;
+    align-items: center;
+}
+
+.trending-today-icon {
+    width: 16px;
+    height: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: .6;
+}
+
+.trending-today-title {
+    text-transform: uppercase;
+    color: rgb(92, 108, 116);
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.trending-today-items-container {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.trending-today-item {
+    display: flex;
+    padding: 8px 16px;
+    gap: 8px;
+}
+
+.trending-today-item:not(:last-child) {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.trending-today-item:hover {
+    background-color: rgb(246, 248, 249);
+    cursor: pointer;
+}
+
+.trending-today-item:active {
+    background-color: rgba(0, 0, 0, 0.16);
+}
+
+.trending-today-item-header {
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(51, 61, 66);
+    padding-top: 8px;
+}
+
+.trending-today-item-body {
+    font-size: 12px;
+    color: rgb(51, 61, 66);
+    margin-bottom: 8px;
+    margin-top: 2px;
+}
+
+.trending-today-item-source {
+    display: flex;
+    align-items: center;
+    color: rgb(92, 108, 116);
+    font-size: 12px;
+    padding-bottom: 16px;
+}
+
+.trending-today-item-avatar {
+    width: 16px;
+    height: 16px;
+}
+
+.trending-today-item-avatar img {
+    border-radius: 50%;
+}
+
+.trending-today-item-preview {
+    display: flex;
+    align-items: center;
+}
+
+.trending-today-item-info {
+    flex: 1;
+    object-fit: cover;
+}
+
+.trending-today-item-preview img {
+    width: 96px;
+    height: 72px;
+    object-fit: cover;
+    border-radius: 5px;
+}

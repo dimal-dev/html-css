@@ -1,0 +1,146 @@
+.main-sidebar {
+    width: 270px;
+    background-color: rgb(245, 245, 245);
+    border-radius: 8px;
+
+    position: sticky;
+    top: 70px;
+    height: calc(100vh - 70px);
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: transparent  transparent;
+    flex-shrink: 0;
+}
+
+.main-sidebar:hover {
+    scrollbar-color: auto;
+}
+
+.main-sidebar-community-info {
+
+}
+
+.main-sidebar-description-title {
+
+
+    font-size: 14px;
+    color: rgb(42, 60, 66);
+}
+
+.main-sidebar-description-detailed {
+    font-size: 14px;
+    line-height: 1.5;
+    color: rgb(87, 111, 118);
+}
+
+.main-sidebar-community-stats {
+    display: flex;
+
+}
+
+.main-sidebar-community-stats > div {
+    flex: 1;
+}
+
+.main-sidebar-stats-overall {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.main-sidebar-stats-amount {
+    color: rgb(19, 19, 19);
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.main-sidebar-stats-label {
+    color: rgb(87, 111, 118);
+    font-size: 12px;
+}
+
+.main-sidebar-online-dot {
+    display: inline-block;
+    background-color: rgb(1, 168, 22);
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+}
+
+.sidebar-image,
+.filter-by-flair {
+
+
+
+
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.sidebar-image-header,
+.filter-by-flair-header {
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: rgb(87, 111, 118);
+}
+
+.flair-list {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+
+    list-style: none;
+}
+
+.flair-button {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+
+
+    border-radius: 20px;
+    background-color: transparent;
+
+
+    text-transform: uppercase;
+    font-size: 12px;
+    color: white;
+}
+
+.flair-button:hover {
+    opacity: .9;
+    cursor: pointer;
+}
+
+.flair-button:active {
+    opacity: .8;
+    cursor: pointer;
+}
+
+.flair-button-fan-made {
+    background-color: rgb(255, 69, 0);
+}
+
+.flair-button-funny {
+    background-color: rgb(255, 176, 0);
+}
+
+.flair-button-discussion {
+    background-color: rgb(52, 158, 72);
+}
+
+.flair-button-spoiler {
+    background-color: rgb(234, 0, 39);
+}
+
+.flair-button-news {
+    background-color: rgb(0, 121, 211);
+}
+
+.flair-button i {
+    width: 1em;
+    height: 1em;
+    font-size: 16px;
+}
